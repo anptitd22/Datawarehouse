@@ -1,0 +1,14 @@
+{"timestamp":"2025-06-14T16:10:04.959768","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-14T16:10:04.960468","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-14T16:10:05.135686","level":"warning","event":"/opt/airflow/dags/etl_dim_customer.py:18: UserWarning: MessageFactory class is deprecated. Please use GetMessageClass() instead of MessageFactory.GetPrototype. MessageFactory class will be removed after 2024.\n  CustomerMessage = factory.GetPrototype(descriptor)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T16:10:05.167653Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:10:05.168066Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:10:05.168316Z","level":"info","event":"Current task name:dim_customer_group.send_to_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:10:05.168578Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:10:05.141011","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T16:10:05.168613","level":"info","event":"Connection Retrieved 'postgres_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T16:10:05.181756","level":"warning","event":"/opt/airflow/dags/etl_dim_customer.py:33: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  df = pd.read_sql(\"\"\"\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T16:10:05.330371","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-14T16:10:05.349151Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:10:05.349653Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:10:05.350028Z","level":"info","event":"Task operator:<Task(PythonOperator): dim_customer_group.send_to_kafka>","chan":"stdout","logger":"task"}

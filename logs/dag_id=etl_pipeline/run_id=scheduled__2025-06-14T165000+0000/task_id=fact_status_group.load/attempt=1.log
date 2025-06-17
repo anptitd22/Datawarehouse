@@ -1,0 +1,21 @@
+{"timestamp":"2025-06-14T16:50:16.139214","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-14T16:50:16.139971","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-14T16:50:16.295465","level":"warning","event":"/opt/airflow/dags/etl_dim_customer.py:21: UserWarning: MessageFactory class is deprecated. Please use GetMessageClass() instead of MessageFactory.GetPrototype. MessageFactory class will be removed after 2024.\n  CustomerMessage = factory.GetPrototype(descriptor)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T16:50:16.323868Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:50:16.324298Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:50:16.324602Z","level":"info","event":"Current task name:fact_status_group.load","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:50:16.324826Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:50:16.300028","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T16:50:16.324649","level":"info","event":"Connection Retrieved 'postgres_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T16:50:16.335882","level":"warning","event":"/opt/airflow/dags/etl_fact_status.py:24: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  df = pd.read_sql(\"\"\"\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T16:50:16.365217","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T16:50:16.375280","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T16:50:16.430508","level":"warning","event":"/opt/airflow/dags/etl_fact_status.py:9: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  date_df = pd.read_sql(\"SELECT date, date_key FROM dim_date\", sql_conn)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T16:50:16.437312","level":"warning","event":"/opt/airflow/dags/etl_fact_status.py:12: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  order_df = pd.read_sql(\"SELECT order_id, order_key FROM dim_order\", sql_conn)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T16:50:16.474820","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T16:50:16.485540","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T16:50:21.382983Z","level":"info","event":"Đã thêm fact_sales 0 bản ghi mới, bỏ qua 3731 bản ghi trùng","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:50:21.384735","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-14T16:50:21.407747Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:50:21.408352Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:50:21.408776Z","level":"info","event":"Task operator:<Task(PythonOperator): fact_status_group.load>","chan":"stdout","logger":"task"}

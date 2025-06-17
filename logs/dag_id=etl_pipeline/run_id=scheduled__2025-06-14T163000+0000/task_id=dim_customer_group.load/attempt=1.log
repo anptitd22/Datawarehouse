@@ -1,0 +1,14 @@
+{"timestamp":"2025-06-14T16:30:07.789764","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-14T16:30:07.790583","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-14T16:30:08.031491","level":"warning","event":"/opt/airflow/dags/etl_dim_customer.py:21: UserWarning: MessageFactory class is deprecated. Please use GetMessageClass() instead of MessageFactory.GetPrototype. MessageFactory class will be removed after 2024.\n  CustomerMessage = factory.GetPrototype(descriptor)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T16:30:08.062339Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:30:08.062914Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:30:08.063287Z","level":"info","event":"Current task name:dim_customer_group.load","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:30:08.063590Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:30:08.042630","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T16:30:08.063527","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T16:30:09.183747Z","level":"info","event":"Đã thêm dim_customer 0 bản ghi mới, bỏ qua 0 bản ghi trùng","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:30:09.185804","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-14T16:30:09.214943Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:30:09.215706Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T16:30:09.216157Z","level":"info","event":"Task operator:<Task(PythonOperator): dim_customer_group.load>","chan":"stdout","logger":"task"}

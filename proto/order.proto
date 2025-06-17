@@ -1,0 +1,10 @@
+syntax = "proto3";
+package dim_order;
+
+message Order {
+  int32 order_key = 1;
+  string order_id = 2;
+  string order_item_id = 3;
+  string status = 4;
+  string payment_method = 5;
+}

@@ -1,0 +1,16 @@
+{"timestamp":"2025-06-17T19:23:43.676789","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-17T19:23:43.680165","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-17T19:23:45.536732Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T19:23:45.636711Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T19:23:45.637862Z","level":"info","event":"Current task name:dim_order_group.load","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T19:23:45.639787Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T19:23:45.447348","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-17T19:23:45.538237","level":"info","event":"Connection Retrieved 'postgres_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-17T19:23:45.795336","level":"warning","event":"/opt/airflow/dags/etl_dim_order.py:6: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  df = pd.read_sql(\"\"\"\n","logger":"py.warnings"}
+{"timestamp":"2025-06-17T19:23:45.858103","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-17T19:23:45.885067","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-17T19:24:01.250687Z","level":"info","event":"Đã thêm dim_order 0 bản ghi mới, bỏ qua 9342 bản ghi trùng","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T19:24:01.251239Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T19:24:01.251666Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T19:24:01.252060Z","level":"info","event":"Task operator:<Task(PythonOperator): dim_order_group.load>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T19:24:01.153399","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

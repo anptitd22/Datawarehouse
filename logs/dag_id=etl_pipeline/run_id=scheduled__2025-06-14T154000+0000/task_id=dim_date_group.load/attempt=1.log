@@ -1,0 +1,19 @@
+{"timestamp":"2025-06-14T15:42:12.549574","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-14T15:42:12.551292","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-14T15:42:12.837868Z","level":"error","event":"%3|1749915732.837|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-14T15:42:12.912155","level":"warning","event":"/opt/airflow/dags/etl_dim_customer.py:18: UserWarning: MessageFactory class is deprecated. Please use GetMessageClass() instead of MessageFactory.GetPrototype. MessageFactory class will be removed after 2024.\n  CustomerMessage = factory.GetPrototype(descriptor)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T15:42:12.989216Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:42:12.991058Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:42:12.991919Z","level":"info","event":"Current task name:dim_date_group.load","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:42:12.992507Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:42:12.930546","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T15:42:12.991351","level":"info","event":"Connection Retrieved 'postgres_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T15:42:13.016488","level":"warning","event":"/opt/airflow/dags/etl_dim_date.py:8: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  df = pd.read_sql(\"\"\"\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T15:42:13.033321","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T15:42:13.050067","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T15:42:13.837184Z","level":"error","event":"%3|1749915733.837|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-14T15:42:15.080051Z","level":"info","event":"Đã thêm dim_date 0 bản ghi mới, bỏ qua 1461 bản ghi trùng","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:42:15.081816","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-14T15:42:15.112305Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:42:15.112799Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:42:15.113186Z","level":"info","event":"Task operator:<Task(PythonOperator): dim_date_group.load>","chan":"stdout","logger":"task"}

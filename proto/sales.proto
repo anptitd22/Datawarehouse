@@ -1,0 +1,16 @@
+syntax = "proto3";
+package fact_sales;
+
+message Sales {
+  int32 sales_key = 1;
+  int32 order_key = 2;
+  int32 customer_key = 3;
+  int32 product_key = 4;
+  int32 date_key = 5;
+  int32 quantity = 6;
+  double unit_price = 7;
+  double total_price = 8;
+  double cost = 9;
+  double revenue = 10;
+  double profit = 11;
+}

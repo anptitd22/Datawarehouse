@@ -1,0 +1,16 @@
+syntax = "proto3";
+package dim_product;
+
+message Product {
+  string product_key = 1;
+  string product_id = 2;
+  string name = 3;
+  string brand = 4;
+  string category = 5;
+  double import_price = 6;
+  double selling_price = 7;
+  double promotion_price = 8;
+  int32 sold = 9;
+  int32 stock = 10;
+  double rating = 11;
+}

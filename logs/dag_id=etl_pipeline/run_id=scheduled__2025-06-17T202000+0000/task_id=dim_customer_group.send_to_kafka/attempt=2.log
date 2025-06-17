@@ -1,0 +1,41 @@
+{"timestamp":"2025-06-17T20:33:34.636335","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-17T20:33:34.637498","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-17T20:33:35.152835Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:35.153606Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:35.154024Z","level":"info","event":"Current task name:dim_customer_group.send_to_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:35.154367Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:35.945380Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.175333Z","level":"error","event":":: loading settings :: url = jar:file:/home/airflow/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.305184Z","level":"error","event":"Ivy Default Cache set to: /home/airflow/.ivy2.5.2/cache","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.305907Z","level":"error","event":"The jars for the packages stored in: /home/airflow/.ivy2.5.2/jars","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.310996Z","level":"error","event":"org.postgresql#postgresql added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.312233Z","level":"error","event":":: resolving dependencies :: org.apache.spark#spark-submit-parent-b35eca08-00f8-4d34-bd0a-f79d25eed6a8;1.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.312656Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.458478Z","level":"error","event":"\tfound org.postgresql#postgresql;42.7.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.481234Z","level":"error","event":"\tfound org.checkerframework#checker-qual;3.41.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.501241Z","level":"error","event":":: resolution report :: resolve 182ms :: artifacts dl 6ms","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.502065Z","level":"error","event":"\t:: modules in use:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.502449Z","level":"error","event":"\torg.checkerframework#checker-qual;3.41.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.502770Z","level":"error","event":"\torg.postgresql#postgresql;42.7.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.503061Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.503278Z","level":"error","event":"\t|                  |            modules            ||   artifacts   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.503512Z","level":"error","event":"\t|       conf       | number| search|dwnlded|evicted|| number|dwnlded|","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.503722Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.503989Z","level":"error","event":"\t|      default     |   2   |   0   |   0   |   0   ||   2   |   0   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.504194Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.505404Z","level":"error","event":":: retrieving :: org.apache.spark#spark-submit-parent-b35eca08-00f8-4d34-bd0a-f79d25eed6a8","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.506078Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.511363Z","level":"error","event":"\t0 artifacts copied, 2 already retrieved (0kB/6ms)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:38.809729Z","level":"error","event":"25/06/17 20:33:38 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:39.036367Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:39.037435Z","level":"error","event":"Setting default log level to \"WARN\".","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:39.038315Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-17T20:33:53.140847Z","level":"info","event":"Tổng số bản ghi cần gửi: 1257","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:53.202000Z","level":"info","event":"Topic 'dim_customer' đã tồn tại.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:53.227831Z","level":"info","event":"Đang gửi batch 1 với 100 bản ghi","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:53.228341","level":"error","event":"Task failed with exception","logger":"task","error_detail":[{"exc_type":"TypeError","exc_value":"'float' object cannot be interpreted as an integer","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":825,"name":"run"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1088,"name":"_execute_task"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/bases/operator.py","lineno":408,"name":"wrapper"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":212,"name":"execute"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":235,"name":"execute_callable"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/callback_runner.py","lineno":81,"name":"run"},{"filename":"/opt/airflow/dags/etl_pipeline.py","lineno":45,"name":"<lambda>"},{"filename":"/opt/airflow/dags/etl_dim_customer.py","lineno":128,"name":"send_customer_to_kafka"}]}]}
+{"timestamp":"2025-06-17T20:33:53.283062Z","level":"info","event":"Task instance in failure state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:53.284012Z","level":"info","event":"Task start","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:53.284628Z","level":"info","event":"Task:<Task(PythonOperator): dim_customer_group.send_to_kafka>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:53.284977Z","level":"info","event":"Failure caused by 'float' object cannot be interpreted as an integer","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-17T20:33:53.814817Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 1) / 1]","chan":"stderr","logger":"task"}

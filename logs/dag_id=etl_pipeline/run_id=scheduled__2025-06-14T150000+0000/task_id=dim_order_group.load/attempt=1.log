@@ -1,0 +1,21 @@
+{"timestamp":"2025-06-14T15:04:44.390001","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-14T15:04:44.391056","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-14T15:04:47.055281Z","level":"error","event":"%3|1749913487.055|FAIL|rdkafka#consumer-2| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-14T15:04:47.057842Z","level":"error","event":"%3|1749913487.055|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-14T15:04:47.107183Z","level":"error","event":"%3|1749913487.106|FAIL|rdkafka#consumer-2| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-14T15:04:47.575540","level":"warning","event":"/opt/airflow/dags/etl_dim_customer.py:18: UserWarning: MessageFactory class is deprecated. Please use GetMessageClass() instead of MessageFactory.GetPrototype. MessageFactory class will be removed after 2024.\n  CustomerMessage = factory.GetPrototype(descriptor)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T15:04:47.823030Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:04:47.823590Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:04:47.823897Z","level":"info","event":"Current task name:dim_order_group.load","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:04:47.824117Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:04:47.632578","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T15:04:47.824196","level":"info","event":"Connection Retrieved 'postgres_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T15:04:48.015754Z","level":"error","event":"%3|1749913488.015|FAIL|rdkafka#producer-1| [thrd:localhost:9092/bootstrap]: localhost:9092/bootstrap: Connect to ipv4#127.0.0.1:9092 failed: Connection refused (after 0ms in state CONNECT, 1 identical error(s) suppressed)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-14T15:04:48.019991","level":"warning","event":"/opt/airflow/dags/etl_dim_order.py:6: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  df = pd.read_sql(\"\"\"\n","logger":"py.warnings"}
+{"timestamp":"2025-06-14T15:04:48.242674","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-14T15:04:48.273731","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-14T15:04:57.778945Z","level":"info","event":"Đã thêm dim_order 0 bản ghi mới, bỏ qua 9342 bản ghi trùng","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:04:57.780581","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-14T15:04:57.796056Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:04:57.796511Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-14T15:04:57.796798Z","level":"info","event":"Task operator:<Task(PythonOperator): dim_order_group.load>","chan":"stdout","logger":"task"}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package fact_status;
+
+message Status {
+  int32 status_key = 1;
+  int32 order_key = 2;
+  int32 date_key = 3;
+  int32 delivered_count = 4;
+  int32 cancelled_count = 5;
+  double delivery_percentage = 6;
+  double cancel_percentage = 7;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package dim_date;
+
+message Date {
+  int32 date_key = 1;
+  string date = 2;
+  int32 day = 3;
+  int32 week = 4;
+  int32 month = 5;
+  int32 quarter = 6;
+  int32 year = 7;
+}

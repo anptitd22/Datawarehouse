@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package dim_customer;
+
+message Customer {
+  int32 customer_key = 1;
+  string client_id = 2;
+  string name = 3;
+  string email = 4;
+  string phone = 5;
+  string address = 6;
+  double total_spent = 7;
+  int32 num_order = 8;
+}
