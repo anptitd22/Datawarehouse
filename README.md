@@ -44,6 +44,6 @@ cài đặt connections database đầu vào và đầu ra
 
 #data postgre: https://github.com/anptitd22/Datawarehouse/blob/main/note/downdata.txt
 
-#script datawarehouse: https://github.com/anptitd22/Datawarehouse/blob/main/note
+#script datawarehouse: https://github.com/anptitd22/Datawarehouse/blob/main/note/create_datawarehouse
 
 #Tran Duc AN
