@@ -1,0 +1,618 @@
+{"timestamp":"2025-06-21T12:17:33.831147","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-21T12:17:33.832092","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-21T12:17:34.210563Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T12:17:34.211434Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T12:17:34.211983Z","level":"info","event":"Current task name:dim_product_group.producer_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T12:17:34.212423Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T12:17:34.762103Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:36.753049Z","level":"error","event":":: loading settings :: url = jar:file:/home/airflow/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:36.854987Z","level":"error","event":"Ivy Default Cache set to: /home/airflow/.ivy2.5.2/cache","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:36.855936Z","level":"error","event":"The jars for the packages stored in: /home/airflow/.ivy2.5.2/jars","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:36.862401Z","level":"error","event":"org.postgresql#postgresql added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:36.863191Z","level":"error","event":"org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:36.864492Z","level":"error","event":":: resolving dependencies :: org.apache.spark#spark-submit-parent-4384158b-8ec3-46c0-98aa-a88f1922b806;1.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:36.865059Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.068285Z","level":"error","event":"\tfound org.postgresql#postgresql;42.7.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.098176Z","level":"error","event":"\tfound org.checkerframework#checker-qual;3.41.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.169822Z","level":"error","event":"\tfound org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.234355Z","level":"error","event":"\tfound org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.266875Z","level":"error","event":"\tfound org.apache.kafka#kafka-clients;2.8.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.307116Z","level":"error","event":"\tfound org.lz4#lz4-java;1.8.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.340252Z","level":"error","event":"\tfound org.xerial.snappy#snappy-java;1.1.8.4 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.374311Z","level":"error","event":"\tfound org.slf4j#slf4j-api;1.7.32 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.439673Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-runtime;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.478005Z","level":"error","event":"\tfound org.spark-project.spark#unused;1.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.549998Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-api;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.604826Z","level":"error","event":"\tfound commons-logging#commons-logging;1.1.3 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.650807Z","level":"error","event":"\tfound com.google.code.findbugs#jsr305;3.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.677741Z","level":"error","event":"\tfound org.apache.commons#commons-pool2;2.11.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.747212Z","level":"error","event":":: resolution report :: resolve 835ms :: artifacts dl 47ms","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.748181Z","level":"error","event":"\t:: modules in use:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.748928Z","level":"error","event":"\tcom.google.code.findbugs#jsr305;3.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.749451Z","level":"error","event":"\tcommons-logging#commons-logging;1.1.3 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.749894Z","level":"error","event":"\torg.apache.commons#commons-pool2;2.11.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.750372Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-api;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.750690Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-runtime;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.751062Z","level":"error","event":"\torg.apache.kafka#kafka-clients;2.8.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.752171Z","level":"error","event":"\torg.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.753063Z","level":"error","event":"\torg.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.753523Z","level":"error","event":"\torg.checkerframework#checker-qual;3.41.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.754060Z","level":"error","event":"\torg.lz4#lz4-java;1.8.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.754820Z","level":"error","event":"\torg.postgresql#postgresql;42.7.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.755428Z","level":"error","event":"\torg.slf4j#slf4j-api;1.7.32 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.755815Z","level":"error","event":"\torg.spark-project.spark#unused;1.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.756382Z","level":"error","event":"\torg.xerial.snappy#snappy-java;1.1.8.4 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.756801Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.757238Z","level":"error","event":"\t|                  |            modules            ||   artifacts   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.757588Z","level":"error","event":"\t|       conf       | number| search|dwnlded|evicted|| number|dwnlded|","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.757956Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.758278Z","level":"error","event":"\t|      default     |   14  |   0   |   0   |   0   ||   14  |   0   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.758577Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.762056Z","level":"error","event":":: retrieving :: org.apache.spark#spark-submit-parent-4384158b-8ec3-46c0-98aa-a88f1922b806","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.762915Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:37.775711Z","level":"error","event":"\t0 artifacts copied, 14 already retrieved (0kB/14ms)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:38.309462Z","level":"error","event":"25/06/21 12:17:38 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:38.697060Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:38.698686Z","level":"error","event":"Setting default log level to \"WARN\".","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:38.699541Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:39.215456Z","level":"error","event":"25/06/21 12:17:39 WARN Utils: Service 'SparkUI' could not bind on port 4050. Attempting port 4051.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T12:17:50.556504","level":"info","event":"Thử lần 1/5 kiểm tra topic 'dim_product'...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:17:50.849307","level":"info","event":"Đang tạo topic 'dim_product' với 5 partitions...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:17:52.123602","level":"info","event":"Đã tạo topic: dim_product","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:17:52.524812","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:17:56.033392","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:17:57.494602","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:04.279996","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:04.881125","level":"info","event":"Batch 1: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:08.752968","level":"info","event":"Delivered to dim_product [0] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.753341","level":"info","event":"Delivered to dim_product [0] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.753475","level":"info","event":"Delivered to dim_product [0] at offset 2","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.753547","level":"info","event":"Delivered to dim_product [0] at offset 3","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.753615","level":"info","event":"Delivered to dim_product [0] at offset 4","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.753681","level":"info","event":"Delivered to dim_product [0] at offset 5","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.753751","level":"info","event":"Delivered to dim_product [0] at offset 6","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.753816","level":"info","event":"Delivered to dim_product [0] at offset 7","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.753861","level":"info","event":"Delivered to dim_product [0] at offset 8","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.757290","level":"info","event":"Delivered to dim_product [1] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.757554","level":"info","event":"Delivered to dim_product [1] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.757644","level":"info","event":"Delivered to dim_product [1] at offset 2","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.757712","level":"info","event":"Delivered to dim_product [1] at offset 3","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.757780","level":"info","event":"Delivered to dim_product [1] at offset 4","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.757877","level":"info","event":"Delivered to dim_product [1] at offset 5","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.758008","level":"info","event":"Delivered to dim_product [1] at offset 6","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.758130","level":"info","event":"Delivered to dim_product [1] at offset 7","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.758256","level":"info","event":"Delivered to dim_product [1] at offset 8","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.758363","level":"info","event":"Delivered to dim_product [1] at offset 9","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.763258","level":"info","event":"Delivered to dim_product [2] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.763572","level":"info","event":"Delivered to dim_product [2] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.763678","level":"info","event":"Delivered to dim_product [2] at offset 2","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.763736","level":"info","event":"Delivered to dim_product [2] at offset 3","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.763792","level":"info","event":"Delivered to dim_product [2] at offset 4","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.763853","level":"info","event":"Delivered to dim_product [2] at offset 5","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.763913","level":"info","event":"Delivered to dim_product [2] at offset 6","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.766568","level":"info","event":"Delivered to dim_product [3] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.766924","level":"info","event":"Delivered to dim_product [3] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.767018","level":"info","event":"Delivered to dim_product [3] at offset 2","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.767087","level":"info","event":"Delivered to dim_product [3] at offset 3","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.767160","level":"info","event":"Delivered to dim_product [3] at offset 4","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.767227","level":"info","event":"Delivered to dim_product [3] at offset 5","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.767296","level":"info","event":"Delivered to dim_product [3] at offset 6","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.767357","level":"info","event":"Delivered to dim_product [3] at offset 7","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.767419","level":"info","event":"Delivered to dim_product [3] at offset 8","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.767485","level":"info","event":"Delivered to dim_product [3] at offset 9","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770262","level":"info","event":"Delivered to dim_product [4] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770489","level":"info","event":"Delivered to dim_product [4] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770585","level":"info","event":"Delivered to dim_product [4] at offset 2","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770658","level":"info","event":"Delivered to dim_product [4] at offset 3","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770727","level":"info","event":"Delivered to dim_product [4] at offset 4","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770799","level":"info","event":"Delivered to dim_product [4] at offset 5","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770865","level":"info","event":"Delivered to dim_product [4] at offset 6","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770929","level":"info","event":"Delivered to dim_product [4] at offset 7","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.770994","level":"info","event":"Delivered to dim_product [4] at offset 8","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.771063","level":"info","event":"Delivered to dim_product [4] at offset 9","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.771137","level":"info","event":"Delivered to dim_product [4] at offset 10","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.771205","level":"info","event":"Delivered to dim_product [4] at offset 11","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.771270","level":"info","event":"Delivered to dim_product [4] at offset 12","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:08.771339","level":"info","event":"Delivered to dim_product [4] at offset 13","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:09.716935","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:09.795700","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:10.319013","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:11.008623","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:11.370437","level":"info","event":"Batch 2: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:11.686181","level":"info","event":"Delivered to dim_product [0] at offset 9","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.686577","level":"info","event":"Delivered to dim_product [0] at offset 10","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.686696","level":"info","event":"Delivered to dim_product [0] at offset 11","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.686773","level":"info","event":"Delivered to dim_product [0] at offset 12","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.686837","level":"info","event":"Delivered to dim_product [0] at offset 13","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.686901","level":"info","event":"Delivered to dim_product [0] at offset 14","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.686971","level":"info","event":"Delivered to dim_product [0] at offset 15","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.687044","level":"info","event":"Delivered to dim_product [0] at offset 16","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.687113","level":"info","event":"Delivered to dim_product [0] at offset 17","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.687179","level":"info","event":"Delivered to dim_product [0] at offset 18","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.687257","level":"info","event":"Delivered to dim_product [0] at offset 19","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690074","level":"info","event":"Delivered to dim_product [1] at offset 10","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690339","level":"info","event":"Delivered to dim_product [1] at offset 11","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690423","level":"info","event":"Delivered to dim_product [1] at offset 12","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690489","level":"info","event":"Delivered to dim_product [1] at offset 13","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690547","level":"info","event":"Delivered to dim_product [1] at offset 14","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690604","level":"info","event":"Delivered to dim_product [1] at offset 15","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690661","level":"info","event":"Delivered to dim_product [1] at offset 16","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690730","level":"info","event":"Delivered to dim_product [1] at offset 17","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690849","level":"info","event":"Delivered to dim_product [1] at offset 18","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.690934","level":"info","event":"Delivered to dim_product [1] at offset 19","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.691015","level":"info","event":"Delivered to dim_product [1] at offset 20","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.691090","level":"info","event":"Delivered to dim_product [1] at offset 21","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.691156","level":"info","event":"Delivered to dim_product [1] at offset 22","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.694085","level":"info","event":"Delivered to dim_product [2] at offset 7","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.694387","level":"info","event":"Delivered to dim_product [2] at offset 8","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.694491","level":"info","event":"Delivered to dim_product [2] at offset 9","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.694563","level":"info","event":"Delivered to dim_product [2] at offset 10","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.694629","level":"info","event":"Delivered to dim_product [2] at offset 11","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.707205","level":"info","event":"Delivered to dim_product [3] at offset 10","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.707873","level":"info","event":"Delivered to dim_product [3] at offset 11","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.707965","level":"info","event":"Delivered to dim_product [3] at offset 12","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708024","level":"info","event":"Delivered to dim_product [3] at offset 13","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708076","level":"info","event":"Delivered to dim_product [3] at offset 14","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708127","level":"info","event":"Delivered to dim_product [3] at offset 15","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708181","level":"info","event":"Delivered to dim_product [3] at offset 16","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708389","level":"info","event":"Delivered to dim_product [3] at offset 17","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708500","level":"info","event":"Delivered to dim_product [3] at offset 18","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708575","level":"info","event":"Delivered to dim_product [3] at offset 19","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708649","level":"info","event":"Delivered to dim_product [3] at offset 20","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708717","level":"info","event":"Delivered to dim_product [3] at offset 21","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.708782","level":"info","event":"Delivered to dim_product [3] at offset 22","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.710602","level":"info","event":"Delivered to dim_product [4] at offset 14","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.710840","level":"info","event":"Delivered to dim_product [4] at offset 15","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.710918","level":"info","event":"Delivered to dim_product [4] at offset 16","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.710987","level":"info","event":"Delivered to dim_product [4] at offset 17","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.711050","level":"info","event":"Delivered to dim_product [4] at offset 18","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.711108","level":"info","event":"Delivered to dim_product [4] at offset 19","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.711165","level":"info","event":"Delivered to dim_product [4] at offset 20","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:11.711223","level":"info","event":"Delivered to dim_product [4] at offset 21","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:12.516253","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:12.589575","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:12.975565","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:13.511911","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:13.847372","level":"info","event":"Batch 3: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:14.129591","level":"info","event":"Delivered to dim_product [3] at offset 23","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.129991","level":"info","event":"Delivered to dim_product [3] at offset 24","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.130092","level":"info","event":"Delivered to dim_product [3] at offset 25","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.130162","level":"info","event":"Delivered to dim_product [3] at offset 26","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.130234","level":"info","event":"Delivered to dim_product [3] at offset 27","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.130501","level":"info","event":"Delivered to dim_product [3] at offset 28","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.130591","level":"info","event":"Delivered to dim_product [3] at offset 29","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.130859","level":"info","event":"Delivered to dim_product [3] at offset 30","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.130972","level":"info","event":"Delivered to dim_product [3] at offset 31","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.131249","level":"info","event":"Delivered to dim_product [3] at offset 32","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.131383","level":"info","event":"Delivered to dim_product [3] at offset 33","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.131565","level":"info","event":"Delivered to dim_product [3] at offset 34","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.131662","level":"info","event":"Delivered to dim_product [3] at offset 35","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.131730","level":"info","event":"Delivered to dim_product [3] at offset 36","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.142770","level":"info","event":"Delivered to dim_product [4] at offset 22","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.143052","level":"info","event":"Delivered to dim_product [4] at offset 23","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.143128","level":"info","event":"Delivered to dim_product [4] at offset 24","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.143194","level":"info","event":"Delivered to dim_product [4] at offset 25","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.143254","level":"info","event":"Delivered to dim_product [4] at offset 26","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.143316","level":"info","event":"Delivered to dim_product [4] at offset 27","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.147908","level":"info","event":"Delivered to dim_product [0] at offset 20","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148163","level":"info","event":"Delivered to dim_product [0] at offset 21","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148238","level":"info","event":"Delivered to dim_product [0] at offset 22","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148300","level":"info","event":"Delivered to dim_product [0] at offset 23","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148369","level":"info","event":"Delivered to dim_product [0] at offset 24","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148427","level":"info","event":"Delivered to dim_product [0] at offset 25","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148485","level":"info","event":"Delivered to dim_product [0] at offset 26","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148543","level":"info","event":"Delivered to dim_product [0] at offset 27","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148603","level":"info","event":"Delivered to dim_product [0] at offset 28","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148665","level":"info","event":"Delivered to dim_product [0] at offset 29","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.148729","level":"info","event":"Delivered to dim_product [0] at offset 30","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.153598","level":"info","event":"Delivered to dim_product [1] at offset 23","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.153825","level":"info","event":"Delivered to dim_product [1] at offset 24","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.153963","level":"info","event":"Delivered to dim_product [1] at offset 25","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.154042","level":"info","event":"Delivered to dim_product [1] at offset 26","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.154108","level":"info","event":"Delivered to dim_product [1] at offset 27","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.154174","level":"info","event":"Delivered to dim_product [1] at offset 28","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.154240","level":"info","event":"Delivered to dim_product [1] at offset 29","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.154309","level":"info","event":"Delivered to dim_product [1] at offset 30","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.154379","level":"info","event":"Delivered to dim_product [1] at offset 31","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.157741","level":"info","event":"Delivered to dim_product [2] at offset 12","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.158335","level":"info","event":"Delivered to dim_product [2] at offset 13","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.158494","level":"info","event":"Delivered to dim_product [2] at offset 14","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.158562","level":"info","event":"Delivered to dim_product [2] at offset 15","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.158632","level":"info","event":"Delivered to dim_product [2] at offset 16","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.158697","level":"info","event":"Delivered to dim_product [2] at offset 17","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.158804","level":"info","event":"Delivered to dim_product [2] at offset 18","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.158870","level":"info","event":"Delivered to dim_product [2] at offset 19","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.158932","level":"info","event":"Delivered to dim_product [2] at offset 20","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:14.159029","level":"info","event":"Delivered to dim_product [2] at offset 21","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:15.066702","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:15.141124","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:15.758917","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:16.484755","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:16.885466","level":"info","event":"Batch 4: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:17.251190","level":"info","event":"Delivered to dim_product [3] at offset 37","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252225","level":"info","event":"Delivered to dim_product [3] at offset 38","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252399","level":"info","event":"Delivered to dim_product [3] at offset 39","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252472","level":"info","event":"Delivered to dim_product [3] at offset 40","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252537","level":"info","event":"Delivered to dim_product [3] at offset 41","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252599","level":"info","event":"Delivered to dim_product [3] at offset 42","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252662","level":"info","event":"Delivered to dim_product [3] at offset 43","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252728","level":"info","event":"Delivered to dim_product [3] at offset 44","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252794","level":"info","event":"Delivered to dim_product [3] at offset 45","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252860","level":"info","event":"Delivered to dim_product [3] at offset 46","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252923","level":"info","event":"Delivered to dim_product [3] at offset 47","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.252987","level":"info","event":"Delivered to dim_product [3] at offset 48","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.253050","level":"info","event":"Delivered to dim_product [3] at offset 49","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.253110","level":"info","event":"Delivered to dim_product [3] at offset 50","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.253170","level":"info","event":"Delivered to dim_product [3] at offset 51","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.267522","level":"info","event":"Delivered to dim_product [3] at offset 52","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.268460","level":"info","event":"Delivered to dim_product [3] at offset 53","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.268838","level":"info","event":"Delivered to dim_product [4] at offset 28","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.270889","level":"info","event":"Delivered to dim_product [4] at offset 29","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.271232","level":"info","event":"Delivered to dim_product [4] at offset 30","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.271315","level":"info","event":"Delivered to dim_product [4] at offset 31","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.279120","level":"info","event":"Delivered to dim_product [0] at offset 31","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.279390","level":"info","event":"Delivered to dim_product [0] at offset 32","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.279494","level":"info","event":"Delivered to dim_product [0] at offset 33","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.279567","level":"info","event":"Delivered to dim_product [0] at offset 34","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.279630","level":"info","event":"Delivered to dim_product [0] at offset 35","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.279686","level":"info","event":"Delivered to dim_product [0] at offset 36","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.279741","level":"info","event":"Delivered to dim_product [0] at offset 37","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.291961","level":"info","event":"Delivered to dim_product [1] at offset 32","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.292281","level":"info","event":"Delivered to dim_product [1] at offset 33","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.292359","level":"info","event":"Delivered to dim_product [1] at offset 34","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.293485","level":"info","event":"Delivered to dim_product [1] at offset 35","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.295256","level":"info","event":"Delivered to dim_product [1] at offset 36","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.295454","level":"info","event":"Delivered to dim_product [1] at offset 37","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.295537","level":"info","event":"Delivered to dim_product [1] at offset 38","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.296042","level":"info","event":"Delivered to dim_product [1] at offset 39","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.296837","level":"info","event":"Delivered to dim_product [1] at offset 40","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.296990","level":"info","event":"Delivered to dim_product [1] at offset 41","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.297070","level":"info","event":"Delivered to dim_product [1] at offset 42","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.327874","level":"info","event":"Delivered to dim_product [2] at offset 22","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.328176","level":"info","event":"Delivered to dim_product [2] at offset 23","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.328261","level":"info","event":"Delivered to dim_product [2] at offset 24","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.328321","level":"info","event":"Delivered to dim_product [2] at offset 25","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.328385","level":"info","event":"Delivered to dim_product [2] at offset 26","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.331272","level":"info","event":"Delivered to dim_product [2] at offset 27","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.331648","level":"info","event":"Delivered to dim_product [2] at offset 28","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.331721","level":"info","event":"Delivered to dim_product [2] at offset 29","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.331796","level":"info","event":"Delivered to dim_product [2] at offset 30","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.333140","level":"info","event":"Delivered to dim_product [2] at offset 31","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:17.333431","level":"info","event":"Delivered to dim_product [2] at offset 32","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:18.366586","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:18.602608","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:19.011844","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:19.824979","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:20.225068","level":"info","event":"Batch 5: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:20.579744","level":"info","event":"Delivered to dim_product [2] at offset 33","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.581904","level":"info","event":"Delivered to dim_product [2] at offset 34","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.582242","level":"info","event":"Delivered to dim_product [2] at offset 35","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.582336","level":"info","event":"Delivered to dim_product [2] at offset 36","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.582402","level":"info","event":"Delivered to dim_product [2] at offset 37","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.582471","level":"info","event":"Delivered to dim_product [2] at offset 38","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.582537","level":"info","event":"Delivered to dim_product [2] at offset 39","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.582603","level":"info","event":"Delivered to dim_product [2] at offset 40","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.582666","level":"info","event":"Delivered to dim_product [2] at offset 41","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.587359","level":"info","event":"Delivered to dim_product [3] at offset 54","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.587709","level":"info","event":"Delivered to dim_product [3] at offset 55","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.587833","level":"info","event":"Delivered to dim_product [3] at offset 56","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588166","level":"info","event":"Delivered to dim_product [3] at offset 57","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588250","level":"info","event":"Delivered to dim_product [3] at offset 58","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588318","level":"info","event":"Delivered to dim_product [3] at offset 59","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588390","level":"info","event":"Delivered to dim_product [3] at offset 60","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588480","level":"info","event":"Delivered to dim_product [3] at offset 61","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588646","level":"info","event":"Delivered to dim_product [3] at offset 62","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588767","level":"info","event":"Delivered to dim_product [3] at offset 63","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588859","level":"info","event":"Delivered to dim_product [3] at offset 64","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.588951","level":"info","event":"Delivered to dim_product [3] at offset 65","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.589036","level":"info","event":"Delivered to dim_product [3] at offset 66","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.592602","level":"info","event":"Delivered to dim_product [4] at offset 32","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.592827","level":"info","event":"Delivered to dim_product [4] at offset 33","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.592912","level":"info","event":"Delivered to dim_product [4] at offset 34","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.592977","level":"info","event":"Delivered to dim_product [4] at offset 35","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.593073","level":"info","event":"Delivered to dim_product [4] at offset 36","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.593146","level":"info","event":"Delivered to dim_product [4] at offset 37","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.593209","level":"info","event":"Delivered to dim_product [4] at offset 38","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.596799","level":"info","event":"Delivered to dim_product [0] at offset 38","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.597097","level":"info","event":"Delivered to dim_product [0] at offset 39","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.597188","level":"info","event":"Delivered to dim_product [0] at offset 40","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.597256","level":"info","event":"Delivered to dim_product [0] at offset 41","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.597406","level":"info","event":"Delivered to dim_product [0] at offset 42","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.597482","level":"info","event":"Delivered to dim_product [0] at offset 43","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.597553","level":"info","event":"Delivered to dim_product [0] at offset 44","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.597902","level":"info","event":"Delivered to dim_product [0] at offset 45","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.601739","level":"info","event":"Delivered to dim_product [1] at offset 43","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.602726","level":"info","event":"Delivered to dim_product [1] at offset 44","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603015","level":"info","event":"Delivered to dim_product [1] at offset 45","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603183","level":"info","event":"Delivered to dim_product [1] at offset 46","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603264","level":"info","event":"Delivered to dim_product [1] at offset 47","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603339","level":"info","event":"Delivered to dim_product [1] at offset 48","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603414","level":"info","event":"Delivered to dim_product [1] at offset 49","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603485","level":"info","event":"Delivered to dim_product [1] at offset 50","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603548","level":"info","event":"Delivered to dim_product [1] at offset 51","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603612","level":"info","event":"Delivered to dim_product [1] at offset 52","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603682","level":"info","event":"Delivered to dim_product [1] at offset 53","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603755","level":"info","event":"Delivered to dim_product [1] at offset 54","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:20.603835","level":"info","event":"Delivered to dim_product [1] at offset 55","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:21.318307","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:21.408311","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:21.814247","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:22.420604","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:22.758000","level":"info","event":"Batch 6: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:23.098943","level":"info","event":"Delivered to dim_product [1] at offset 56","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.099437","level":"info","event":"Delivered to dim_product [1] at offset 57","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.099570","level":"info","event":"Delivered to dim_product [1] at offset 58","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.099876","level":"info","event":"Delivered to dim_product [1] at offset 59","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.099965","level":"info","event":"Delivered to dim_product [1] at offset 60","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.100027","level":"info","event":"Delivered to dim_product [1] at offset 61","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.100196","level":"info","event":"Delivered to dim_product [1] at offset 62","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.100261","level":"info","event":"Delivered to dim_product [1] at offset 63","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.100322","level":"info","event":"Delivered to dim_product [1] at offset 64","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.114030","level":"info","event":"Delivered to dim_product [2] at offset 42","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.114443","level":"info","event":"Delivered to dim_product [2] at offset 43","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.114548","level":"info","event":"Delivered to dim_product [2] at offset 44","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.114623","level":"info","event":"Delivered to dim_product [2] at offset 45","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.114692","level":"info","event":"Delivered to dim_product [2] at offset 46","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.114760","level":"info","event":"Delivered to dim_product [2] at offset 47","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.114862","level":"info","event":"Delivered to dim_product [2] at offset 48","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.114947","level":"info","event":"Delivered to dim_product [2] at offset 49","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.115036","level":"info","event":"Delivered to dim_product [2] at offset 50","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.125857","level":"info","event":"Delivered to dim_product [3] at offset 67","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.133159","level":"info","event":"Delivered to dim_product [3] at offset 68","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.133471","level":"info","event":"Delivered to dim_product [3] at offset 69","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.133728","level":"info","event":"Delivered to dim_product [3] at offset 70","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.133801","level":"info","event":"Delivered to dim_product [3] at offset 71","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.133865","level":"info","event":"Delivered to dim_product [3] at offset 72","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.133927","level":"info","event":"Delivered to dim_product [3] at offset 73","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.133992","level":"info","event":"Delivered to dim_product [3] at offset 74","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134119","level":"info","event":"Delivered to dim_product [3] at offset 75","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134209","level":"info","event":"Delivered to dim_product [4] at offset 39","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134272","level":"info","event":"Delivered to dim_product [4] at offset 40","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134342","level":"info","event":"Delivered to dim_product [4] at offset 41","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134410","level":"info","event":"Delivered to dim_product [4] at offset 42","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134472","level":"info","event":"Delivered to dim_product [4] at offset 43","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134541","level":"info","event":"Delivered to dim_product [4] at offset 44","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134604","level":"info","event":"Delivered to dim_product [4] at offset 45","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134823","level":"info","event":"Delivered to dim_product [4] at offset 46","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134914","level":"info","event":"Delivered to dim_product [4] at offset 47","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.134979","level":"info","event":"Delivered to dim_product [4] at offset 48","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.135044","level":"info","event":"Delivered to dim_product [4] at offset 49","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.147699","level":"info","event":"Delivered to dim_product [0] at offset 46","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148094","level":"info","event":"Delivered to dim_product [0] at offset 47","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148187","level":"info","event":"Delivered to dim_product [0] at offset 48","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148251","level":"info","event":"Delivered to dim_product [0] at offset 49","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148315","level":"info","event":"Delivered to dim_product [0] at offset 50","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148378","level":"info","event":"Delivered to dim_product [0] at offset 51","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148509","level":"info","event":"Delivered to dim_product [0] at offset 52","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148602","level":"info","event":"Delivered to dim_product [0] at offset 53","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148678","level":"info","event":"Delivered to dim_product [0] at offset 54","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.148843","level":"info","event":"Delivered to dim_product [0] at offset 55","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.149339","level":"info","event":"Delivered to dim_product [0] at offset 56","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:23.149587","level":"info","event":"Delivered to dim_product [0] at offset 57","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:24.010850","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:24.141449","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:34.658194","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:41.730712","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:42.225578","level":"info","event":"Batch 7: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:42.490751","level":"info","event":"Delivered to dim_product [3] at offset 76","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491076","level":"info","event":"Delivered to dim_product [3] at offset 77","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491161","level":"info","event":"Delivered to dim_product [3] at offset 78","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491227","level":"info","event":"Delivered to dim_product [3] at offset 79","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491286","level":"info","event":"Delivered to dim_product [3] at offset 80","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491342","level":"info","event":"Delivered to dim_product [3] at offset 81","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491397","level":"info","event":"Delivered to dim_product [3] at offset 82","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491455","level":"info","event":"Delivered to dim_product [3] at offset 83","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491514","level":"info","event":"Delivered to dim_product [3] at offset 84","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491568","level":"info","event":"Delivered to dim_product [3] at offset 85","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491625","level":"info","event":"Delivered to dim_product [3] at offset 86","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491686","level":"info","event":"Delivered to dim_product [3] at offset 87","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491747","level":"info","event":"Delivered to dim_product [3] at offset 88","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.491812","level":"info","event":"Delivered to dim_product [3] at offset 89","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.502659","level":"info","event":"Delivered to dim_product [4] at offset 50","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503126","level":"info","event":"Delivered to dim_product [4] at offset 51","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503275","level":"info","event":"Delivered to dim_product [4] at offset 52","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503395","level":"info","event":"Delivered to dim_product [4] at offset 53","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503478","level":"info","event":"Delivered to dim_product [4] at offset 54","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503546","level":"info","event":"Delivered to dim_product [4] at offset 55","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503607","level":"info","event":"Delivered to dim_product [4] at offset 56","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503670","level":"info","event":"Delivered to dim_product [4] at offset 57","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503729","level":"info","event":"Delivered to dim_product [4] at offset 58","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503799","level":"info","event":"Delivered to dim_product [4] at offset 59","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.503864","level":"info","event":"Delivered to dim_product [4] at offset 60","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.518944","level":"info","event":"Delivered to dim_product [0] at offset 58","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.519259","level":"info","event":"Delivered to dim_product [0] at offset 59","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.519376","level":"info","event":"Delivered to dim_product [0] at offset 60","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.519456","level":"info","event":"Delivered to dim_product [0] at offset 61","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.519532","level":"info","event":"Delivered to dim_product [0] at offset 62","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.519605","level":"info","event":"Delivered to dim_product [0] at offset 63","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.519678","level":"info","event":"Delivered to dim_product [0] at offset 64","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.519839","level":"info","event":"Delivered to dim_product [0] at offset 65","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.519926","level":"info","event":"Delivered to dim_product [0] at offset 66","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.526984","level":"info","event":"Delivered to dim_product [1] at offset 65","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.527481","level":"info","event":"Delivered to dim_product [1] at offset 66","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.527641","level":"info","event":"Delivered to dim_product [1] at offset 67","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.527735","level":"info","event":"Delivered to dim_product [1] at offset 68","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.527807","level":"info","event":"Delivered to dim_product [1] at offset 69","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.527867","level":"info","event":"Delivered to dim_product [1] at offset 70","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.527929","level":"info","event":"Delivered to dim_product [1] at offset 71","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.528035","level":"info","event":"Delivered to dim_product [1] at offset 72","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.528108","level":"info","event":"Delivered to dim_product [1] at offset 73","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.534097","level":"info","event":"Delivered to dim_product [2] at offset 51","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.534653","level":"info","event":"Delivered to dim_product [2] at offset 52","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.534787","level":"info","event":"Delivered to dim_product [2] at offset 53","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.534917","level":"info","event":"Delivered to dim_product [2] at offset 54","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.535007","level":"info","event":"Delivered to dim_product [2] at offset 55","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.535108","level":"info","event":"Delivered to dim_product [2] at offset 56","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:42.535208","level":"info","event":"Delivered to dim_product [2] at offset 57","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:43.195704","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:43.308902","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:43.767494","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:44.260665","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:44.472660","level":"info","event":"Batch 8: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:44.663435","level":"info","event":"Delivered to dim_product [2] at offset 58","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.664652","level":"info","event":"Delivered to dim_product [2] at offset 59","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.665005","level":"info","event":"Delivered to dim_product [2] at offset 60","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.665138","level":"info","event":"Delivered to dim_product [2] at offset 61","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.665243","level":"info","event":"Delivered to dim_product [2] at offset 62","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.665357","level":"info","event":"Delivered to dim_product [2] at offset 63","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.665452","level":"info","event":"Delivered to dim_product [2] at offset 64","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.665590","level":"info","event":"Delivered to dim_product [2] at offset 65","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.665688","level":"info","event":"Delivered to dim_product [2] at offset 66","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.668765","level":"info","event":"Delivered to dim_product [3] at offset 90","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669084","level":"info","event":"Delivered to dim_product [3] at offset 91","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669184","level":"info","event":"Delivered to dim_product [3] at offset 92","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669261","level":"info","event":"Delivered to dim_product [3] at offset 93","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669337","level":"info","event":"Delivered to dim_product [3] at offset 94","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669439","level":"info","event":"Delivered to dim_product [3] at offset 95","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669547","level":"info","event":"Delivered to dim_product [3] at offset 96","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669626","level":"info","event":"Delivered to dim_product [3] at offset 97","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669701","level":"info","event":"Delivered to dim_product [3] at offset 98","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669771","level":"info","event":"Delivered to dim_product [3] at offset 99","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669841","level":"info","event":"Delivered to dim_product [3] at offset 100","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.669913","level":"info","event":"Delivered to dim_product [3] at offset 101","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.670152","level":"info","event":"Delivered to dim_product [3] at offset 102","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.670232","level":"info","event":"Delivered to dim_product [3] at offset 103","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.675880","level":"info","event":"Delivered to dim_product [4] at offset 61","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.676513","level":"info","event":"Delivered to dim_product [4] at offset 62","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.676951","level":"info","event":"Delivered to dim_product [4] at offset 63","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.677049","level":"info","event":"Delivered to dim_product [4] at offset 64","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.677152","level":"info","event":"Delivered to dim_product [4] at offset 65","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.677223","level":"info","event":"Delivered to dim_product [4] at offset 66","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.677288","level":"info","event":"Delivered to dim_product [4] at offset 67","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.677355","level":"info","event":"Delivered to dim_product [4] at offset 68","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.677420","level":"info","event":"Delivered to dim_product [4] at offset 69","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.677485","level":"info","event":"Delivered to dim_product [4] at offset 70","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.680563","level":"info","event":"Delivered to dim_product [0] at offset 67","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.680748","level":"info","event":"Delivered to dim_product [0] at offset 68","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.680811","level":"info","event":"Delivered to dim_product [0] at offset 69","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.680872","level":"info","event":"Delivered to dim_product [0] at offset 70","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.680929","level":"info","event":"Delivered to dim_product [0] at offset 71","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.680986","level":"info","event":"Delivered to dim_product [0] at offset 72","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.681043","level":"info","event":"Delivered to dim_product [0] at offset 73","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.681104","level":"info","event":"Delivered to dim_product [0] at offset 74","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.681162","level":"info","event":"Delivered to dim_product [0] at offset 75","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.685633","level":"info","event":"Delivered to dim_product [1] at offset 74","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.685965","level":"info","event":"Delivered to dim_product [1] at offset 75","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.686079","level":"info","event":"Delivered to dim_product [1] at offset 76","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.686151","level":"info","event":"Delivered to dim_product [1] at offset 77","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.686224","level":"info","event":"Delivered to dim_product [1] at offset 78","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.686357","level":"info","event":"Delivered to dim_product [1] at offset 79","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.686439","level":"info","event":"Delivered to dim_product [1] at offset 80","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:44.686506","level":"info","event":"Delivered to dim_product [1] at offset 81","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:45.454994","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:45.677546","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:46.095236","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:46.988802","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:47.311874","level":"info","event":"Batch 9: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:47.815393","level":"info","event":"Delivered to dim_product [1] at offset 82","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.817062","level":"info","event":"Delivered to dim_product [1] at offset 83","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.817268","level":"info","event":"Delivered to dim_product [1] at offset 84","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.817341","level":"info","event":"Delivered to dim_product [1] at offset 85","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.817412","level":"info","event":"Delivered to dim_product [1] at offset 86","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.817529","level":"info","event":"Delivered to dim_product [1] at offset 87","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.817614","level":"info","event":"Delivered to dim_product [1] at offset 88","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.817681","level":"info","event":"Delivered to dim_product [1] at offset 89","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.822824","level":"info","event":"Delivered to dim_product [2] at offset 67","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.823051","level":"info","event":"Delivered to dim_product [2] at offset 68","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.825030","level":"info","event":"Delivered to dim_product [2] at offset 69","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.833131","level":"info","event":"Delivered to dim_product [2] at offset 70","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.841360","level":"info","event":"Delivered to dim_product [2] at offset 71","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.841657","level":"info","event":"Delivered to dim_product [2] at offset 72","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.841779","level":"info","event":"Delivered to dim_product [2] at offset 73","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.841858","level":"info","event":"Delivered to dim_product [2] at offset 74","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.841926","level":"info","event":"Delivered to dim_product [2] at offset 75","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.841996","level":"info","event":"Delivered to dim_product [2] at offset 76","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.842064","level":"info","event":"Delivered to dim_product [2] at offset 77","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.842133","level":"info","event":"Delivered to dim_product [2] at offset 78","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.842214","level":"info","event":"Delivered to dim_product [3] at offset 104","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.842378","level":"info","event":"Delivered to dim_product [3] at offset 105","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.842571","level":"info","event":"Delivered to dim_product [3] at offset 106","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.842720","level":"info","event":"Delivered to dim_product [3] at offset 107","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.842976","level":"info","event":"Delivered to dim_product [3] at offset 108","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.843036","level":"info","event":"Delivered to dim_product [3] at offset 109","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.843190","level":"info","event":"Delivered to dim_product [4] at offset 71","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.843364","level":"info","event":"Delivered to dim_product [4] at offset 72","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.845701","level":"info","event":"Delivered to dim_product [4] at offset 73","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.845937","level":"info","event":"Delivered to dim_product [4] at offset 74","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.846103","level":"info","event":"Delivered to dim_product [4] at offset 75","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.846174","level":"info","event":"Delivered to dim_product [4] at offset 76","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.846247","level":"info","event":"Delivered to dim_product [4] at offset 77","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.846323","level":"info","event":"Delivered to dim_product [4] at offset 78","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.846599","level":"info","event":"Delivered to dim_product [4] at offset 79","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.846803","level":"info","event":"Delivered to dim_product [4] at offset 80","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.847019","level":"info","event":"Delivered to dim_product [4] at offset 81","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.847352","level":"info","event":"Delivered to dim_product [0] at offset 76","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.847613","level":"info","event":"Delivered to dim_product [0] at offset 77","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.847705","level":"info","event":"Delivered to dim_product [0] at offset 78","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.847820","level":"info","event":"Delivered to dim_product [0] at offset 79","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.847982","level":"info","event":"Delivered to dim_product [0] at offset 80","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.848252","level":"info","event":"Delivered to dim_product [0] at offset 81","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.848433","level":"info","event":"Delivered to dim_product [0] at offset 82","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.848530","level":"info","event":"Delivered to dim_product [0] at offset 83","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.850857","level":"info","event":"Delivered to dim_product [0] at offset 84","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.851154","level":"info","event":"Delivered to dim_product [0] at offset 85","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.851310","level":"info","event":"Delivered to dim_product [0] at offset 86","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.851386","level":"info","event":"Delivered to dim_product [0] at offset 87","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:47.851456","level":"info","event":"Delivered to dim_product [0] at offset 88","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:48.669327","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:48.739070","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:49.251388","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:49.593435","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:49.826852","level":"info","event":"Batch 10: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:18:50.194858","level":"info","event":"Delivered to dim_product [0] at offset 89","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.195220","level":"info","event":"Delivered to dim_product [0] at offset 90","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.195321","level":"info","event":"Delivered to dim_product [0] at offset 91","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.195388","level":"info","event":"Delivered to dim_product [0] at offset 92","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.195451","level":"info","event":"Delivered to dim_product [0] at offset 93","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.195514","level":"info","event":"Delivered to dim_product [0] at offset 94","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.195577","level":"info","event":"Delivered to dim_product [0] at offset 95","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.201647","level":"info","event":"Delivered to dim_product [1] at offset 90","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.202852","level":"info","event":"Delivered to dim_product [1] at offset 91","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.203389","level":"info","event":"Delivered to dim_product [1] at offset 92","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.203551","level":"info","event":"Delivered to dim_product [1] at offset 93","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.203672","level":"info","event":"Delivered to dim_product [1] at offset 94","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.203756","level":"info","event":"Delivered to dim_product [1] at offset 95","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.203896","level":"info","event":"Delivered to dim_product [1] at offset 96","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.204032","level":"info","event":"Delivered to dim_product [1] at offset 97","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.207453","level":"info","event":"Delivered to dim_product [2] at offset 79","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.207736","level":"info","event":"Delivered to dim_product [2] at offset 80","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.207822","level":"info","event":"Delivered to dim_product [2] at offset 81","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.207946","level":"info","event":"Delivered to dim_product [2] at offset 82","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.208029","level":"info","event":"Delivered to dim_product [2] at offset 83","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.208091","level":"info","event":"Delivered to dim_product [2] at offset 84","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.208152","level":"info","event":"Delivered to dim_product [2] at offset 85","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.208214","level":"info","event":"Delivered to dim_product [2] at offset 86","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.208270","level":"info","event":"Delivered to dim_product [2] at offset 87","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.208325","level":"info","event":"Delivered to dim_product [2] at offset 88","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.208380","level":"info","event":"Delivered to dim_product [2] at offset 89","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.214256","level":"info","event":"Delivered to dim_product [3] at offset 110","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.214518","level":"info","event":"Delivered to dim_product [3] at offset 111","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.214612","level":"info","event":"Delivered to dim_product [3] at offset 112","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.214677","level":"info","event":"Delivered to dim_product [3] at offset 113","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.214767","level":"info","event":"Delivered to dim_product [3] at offset 114","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.214844","level":"info","event":"Delivered to dim_product [3] at offset 115","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.214914","level":"info","event":"Delivered to dim_product [3] at offset 116","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.214979","level":"info","event":"Delivered to dim_product [3] at offset 117","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.215065","level":"info","event":"Delivered to dim_product [3] at offset 118","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.215145","level":"info","event":"Delivered to dim_product [3] at offset 119","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.215210","level":"info","event":"Delivered to dim_product [3] at offset 120","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.215275","level":"info","event":"Delivered to dim_product [3] at offset 121","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.215336","level":"info","event":"Delivered to dim_product [3] at offset 122","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.215450","level":"info","event":"Delivered to dim_product [3] at offset 123","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.215518","level":"info","event":"Delivered to dim_product [3] at offset 124","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219104","level":"info","event":"Delivered to dim_product [4] at offset 82","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219376","level":"info","event":"Delivered to dim_product [4] at offset 83","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219457","level":"info","event":"Delivered to dim_product [4] at offset 84","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219557","level":"info","event":"Delivered to dim_product [4] at offset 85","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219628","level":"info","event":"Delivered to dim_product [4] at offset 86","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219732","level":"info","event":"Delivered to dim_product [4] at offset 87","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219799","level":"info","event":"Delivered to dim_product [4] at offset 88","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219861","level":"info","event":"Delivered to dim_product [4] at offset 89","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:50.219920","level":"info","event":"Delivered to dim_product [4] at offset 90","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T12:18:51.069599","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:19:14.112078","level":"error","event":"Lỗi trong quá trình gửi Kafka: An error occurred while calling o792.load.\n: org.postgresql.util.PSQLException: The connection attempt failed.\n\tat org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)\n\tat org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)\n\tat org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)\n\tat org.postgresql.Driver.makeConnection(Driver.java:444)\n\tat org.postgresql.Driver.connect(Driver.java:297)\n\tat org.apache.spark.sql.execution.datasources.jdbc.connection.BasicConnectionProvider.getConnection(BasicConnectionProvider.scala:50)\n\tat org.apache.spark.sql.execution.datasources.jdbc.connection.ConnectionProviderBase.create(ConnectionProvider.scala:102)\n\tat org.apache.spark.sql.jdbc.JdbcDialect.$anonfun$createConnectionFactory$1(JdbcDialects.scala:235)\n\tat org.apache.spark.sql.jdbc.JdbcDialect.$anonfun$createConnectionFactory$1$adapted(JdbcDialects.scala:231)\n\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.getQueryOutputSchema(JDBCRDD.scala:67)\n\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.resolveTable(JDBCRDD.scala:62)\n\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRelation$.getSchema(JDBCRelation.scala:243)\n\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:38)\n\tat org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:361)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.org$apache$spark$sql$catalyst$analysis$ResolveDataSource$$loadV1BatchSource(ResolveDataSource.scala:143)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.$anonfun$applyOrElse$2(ResolveDataSource.scala:61)\n\tat scala.Option.getOrElse(Option.scala:201)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:61)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:45)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$3(AnalysisHelper.scala:139)\n\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:86)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$1(AnalysisHelper.scala:139)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.allowInvokingTransformsInAnalyzer(AnalysisHelper.scala:416)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning(AnalysisHelper.scala:135)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning$(AnalysisHelper.scala:131)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUpWithPruning(LogicalPlan.scala:37)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp(AnalysisHelper.scala:112)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp$(AnalysisHelper.scala:111)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUp(LogicalPlan.scala:37)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:45)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:43)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$2(RuleExecutor.scala:242)\n\tat scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)\n\tat scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)\n\tat scala.collection.immutable.List.foldLeft(List.scala:79)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1(RuleExecutor.scala:239)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1$adapted(RuleExecutor.scala:231)\n\tat scala.collection.immutable.List.foreach(List.scala:334)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:231)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.org$apache$spark$sql$catalyst$analysis$Analyzer$$executeSameContext(Analyzer.scala:290)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$execute$1(Analyzer.scala:286)\n\tat org.apache.spark.sql.catalyst.analysis.AnalysisContext$.withNewAnalysisContext(Analyzer.scala:234)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:286)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:249)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$executeAndTrack$1(RuleExecutor.scala:201)\n\tat org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.executeAndTrack(RuleExecutor.scala:201)\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:190)\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)\n\tat org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)\n\tat org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)\n\tat org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)\n\tat scala.util.Try$.apply(Try.scala:217)\n\tat org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)\n\tat org.apache.spark.util.Utils$.getTryWithCallerStacktrace(Utils.scala:1439)\n\tat org.apache.spark.util.LazyTry.get(LazyTry.scala:58)\n\tat org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:121)\n\tat org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:80)\n\tat org.apache.spark.sql.classic.Dataset$.$anonfun$ofRows$1(Dataset.scala:115)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)\n\tat org.apache.spark.sql.classic.Dataset$.ofRows(Dataset.scala:113)\n\tat org.apache.spark.sql.classic.DataFrameReader.load(DataFrameReader.scala:109)\n\tat org.apache.spark.sql.classic.DataFrameReader.load(DataFrameReader.scala:92)\n\tat org.apache.spark.sql.classic.DataFrameReader.load(DataFrameReader.scala:58)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:569)\n\tat py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)\n\tat py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)\n\tat py4j.Gateway.invoke(Gateway.java:282)\n\tat py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)\n\tat py4j.commands.CallCommand.execute(CallCommand.java:79)\n\tat py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:184)\n\tat py4j.ClientServerConnection.run(ClientServerConnection.java:108)\n\tat java.base/java.lang.Thread.run(Thread.java:840)\n\tSuppressed: org.apache.spark.util.Utils$OriginalTryStackTraceException: Full stacktrace of original doTryWithCallerStacktrace caller\n\t\tat org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:354)\n\t\tat org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)\n\t\tat org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)\n\t\tat org.postgresql.Driver.makeConnection(Driver.java:444)\n\t\tat org.postgresql.Driver.connect(Driver.java:297)\n\t\tat org.apache.spark.sql.execution.datasources.jdbc.connection.BasicConnectionProvider.getConnection(BasicConnectionProvider.scala:50)\n\t\tat org.apache.spark.sql.execution.datasources.jdbc.connection.ConnectionProviderBase.create(ConnectionProvider.scala:102)\n\t\tat org.apache.spark.sql.jdbc.JdbcDialect.$anonfun$createConnectionFactory$1(JdbcDialects.scala:235)\n\t\tat org.apache.spark.sql.jdbc.JdbcDialect.$anonfun$createConnectionFactory$1$adapted(JdbcDialects.scala:231)\n\t\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.getQueryOutputSchema(JDBCRDD.scala:67)\n\t\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.resolveTable(JDBCRDD.scala:62)\n\t\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRelation$.getSchema(JDBCRelation.scala:243)\n\t\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:38)\n\t\tat org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:361)\n\t\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.org$apache$spark$sql$catalyst$analysis$ResolveDataSource$$loadV1BatchSource(ResolveDataSource.scala:143)\n\t\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.$anonfun$applyOrElse$2(ResolveDataSource.scala:61)\n\t\tat scala.Option.getOrElse(Option.scala:201)\n\t\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:61)\n\t\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:45)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$3(AnalysisHelper.scala:139)\n\t\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:86)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$1(AnalysisHelper.scala:139)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.allowInvokingTransformsInAnalyzer(AnalysisHelper.scala:416)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning(AnalysisHelper.scala:135)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning$(AnalysisHelper.scala:131)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUpWithPruning(LogicalPlan.scala:37)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp(AnalysisHelper.scala:112)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp$(AnalysisHelper.scala:111)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUp(LogicalPlan.scala:37)\n\t\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:45)\n\t\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:43)\n\t\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$2(RuleExecutor.scala:242)\n\t\tat scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)\n\t\tat scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)\n\t\tat scala.collection.immutable.List.foldLeft(List.scala:79)\n\t\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1(RuleExecutor.scala:239)\n\t\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1$adapted(RuleExecutor.scala:231)\n\t\tat scala.collection.immutable.List.foreach(List.scala:334)\n\t\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:231)\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.org$apache$spark$sql$catalyst$analysis$Analyzer$$executeSameContext(Analyzer.scala:290)\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$execute$1(Analyzer.scala:286)\n\t\tat org.apache.spark.sql.catalyst.analysis.AnalysisContext$.withNewAnalysisContext(Analyzer.scala:234)\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:286)\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:249)\n\t\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$executeAndTrack$1(RuleExecutor.scala:201)\n\t\tat org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)\n\t\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.executeAndTrack(RuleExecutor.scala:201)\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:190)\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)\n\t\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)\n\t\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)\n\t\tat org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)\n\t\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)\n\t\tat org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)\n\t\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)\n\t\tat org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)\n\t\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)\n\t\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)\n\t\tat org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)\n\t\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)\n\t\tat scala.util.Try$.apply(Try.scala:217)\n\t\tat org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)\n\t\tat org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)\n\t\tat org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)\n\t\t... 21 more\nCaused by: java.net.UnknownHostException: postgres_container\n\tat java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:572)\n\tat java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)\n\tat java.base/java.net.Socket.connect(Socket.java:633)\n\tat org.postgresql.core.PGStream.createSocket(PGStream.java:243)\n\tat org.postgresql.core.PGStream.<init>(PGStream.java:98)\n\tat org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:132)\n\tat org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)\n\tat org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)\n\tat org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)\n\tat org.postgresql.Driver.makeConnection(Driver.java:444)\n\tat org.postgresql.Driver.connect(Driver.java:297)\n\tat org.apache.spark.sql.execution.datasources.jdbc.connection.BasicConnectionProvider.getConnection(BasicConnectionProvider.scala:50)\n\tat org.apache.spark.sql.execution.datasources.jdbc.connection.ConnectionProviderBase.create(ConnectionProvider.scala:102)\n\tat org.apache.spark.sql.jdbc.JdbcDialect.$anonfun$createConnectionFactory$1(JdbcDialects.scala:235)\n\tat org.apache.spark.sql.jdbc.JdbcDialect.$anonfun$createConnectionFactory$1$adapted(JdbcDialects.scala:231)\n\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.getQueryOutputSchema(JDBCRDD.scala:67)\n\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.resolveTable(JDBCRDD.scala:62)\n\tat org.apache.spark.sql.execution.datasources.jdbc.JDBCRelation$.getSchema(JDBCRelation.scala:243)\n\tat org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:38)\n\tat org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:361)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.org$apache$spark$sql$catalyst$analysis$ResolveDataSource$$loadV1BatchSource(ResolveDataSource.scala:143)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.$anonfun$applyOrElse$2(ResolveDataSource.scala:61)\n\tat scala.Option.getOrElse(Option.scala:201)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:61)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource$$anonfun$apply$1.applyOrElse(ResolveDataSource.scala:45)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$3(AnalysisHelper.scala:139)\n\tat org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:86)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.$anonfun$resolveOperatorsUpWithPruning$1(AnalysisHelper.scala:139)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.allowInvokingTransformsInAnalyzer(AnalysisHelper.scala:416)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning(AnalysisHelper.scala:135)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUpWithPruning$(AnalysisHelper.scala:131)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUpWithPruning(LogicalPlan.scala:37)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp(AnalysisHelper.scala:112)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.resolveOperatorsUp$(AnalysisHelper.scala:111)\n\tat org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.resolveOperatorsUp(LogicalPlan.scala:37)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:45)\n\tat org.apache.spark.sql.catalyst.analysis.ResolveDataSource.apply(ResolveDataSource.scala:43)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$2(RuleExecutor.scala:242)\n\tat scala.collection.LinearSeqOps.foldLeft(LinearSeq.scala:183)\n\tat scala.collection.LinearSeqOps.foldLeft$(LinearSeq.scala:179)\n\tat scala.collection.immutable.List.foldLeft(List.scala:79)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1(RuleExecutor.scala:239)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$execute$1$adapted(RuleExecutor.scala:231)\n\tat scala.collection.immutable.List.foreach(List.scala:334)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.execute(RuleExecutor.scala:231)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.org$apache$spark$sql$catalyst$analysis$Analyzer$$executeSameContext(Analyzer.scala:290)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$execute$1(Analyzer.scala:286)\n\tat org.apache.spark.sql.catalyst.analysis.AnalysisContext$.withNewAnalysisContext(Analyzer.scala:234)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:286)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.execute(Analyzer.scala:249)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.$anonfun$executeAndTrack$1(RuleExecutor.scala:201)\n\tat org.apache.spark.sql.catalyst.QueryPlanningTracker$.withTracker(QueryPlanningTracker.scala:89)\n\tat org.apache.spark.sql.catalyst.rules.RuleExecutor.executeAndTrack(RuleExecutor.scala:201)\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.resolveInFixedPoint(HybridAnalyzer.scala:190)\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.$anonfun$apply$1(HybridAnalyzer.scala:76)\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.withTrackedAnalyzerBridgeState(HybridAnalyzer.scala:111)\n\tat org.apache.spark.sql.catalyst.analysis.resolver.HybridAnalyzer.apply(HybridAnalyzer.scala:71)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.$anonfun$executeAndCheck$1(Analyzer.scala:280)\n\tat org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper$.markInAnalyzer(AnalysisHelper.scala:423)\n\tat org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:280)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$2(QueryExecution.scala:110)\n\tat org.apache.spark.sql.catalyst.QueryPlanningTracker.measurePhase(QueryPlanningTracker.scala:148)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$2(QueryExecution.scala:278)\n\tat org.apache.spark.sql.execution.QueryExecution$.withInternalError(QueryExecution.scala:654)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$executePhase$1(QueryExecution.scala:278)\n\tat org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:804)\n\tat org.apache.spark.sql.execution.QueryExecution.executePhase(QueryExecution.scala:277)\n\tat org.apache.spark.sql.execution.QueryExecution.$anonfun$lazyAnalyzed$1(QueryExecution.scala:110)\n\tat scala.util.Try$.apply(Try.scala:217)\n\tat org.apache.spark.util.Utils$.doTryWithCallerStacktrace(Utils.scala:1378)\n\tat org.apache.spark.util.LazyTry.tryT$lzycompute(LazyTry.scala:46)\n\tat org.apache.spark.util.LazyTry.tryT(LazyTry.scala:46)\n\t... 21 more\n","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T12:19:14.396122","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-21T12:19:14.474536Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T12:19:14.475589Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T12:19:14.476088Z","level":"info","event":"Task operator:<Task(PythonOperator): dim_product_group.producer_kafka>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T12:19:15.116190Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 0) / 1]\r\r[Stage 0:>                                                          (0 + 1) / 1]\r\r                                                                                \r\r[Stage 1:>                                                          (0 + 1) / 1]\r\r                                                                                \r\r[Stage 66:>                                                         (0 + 0) / 1]\r\r[Stage 66:>                                                         (0 + 1) / 1]","chan":"stderr","logger":"task"}

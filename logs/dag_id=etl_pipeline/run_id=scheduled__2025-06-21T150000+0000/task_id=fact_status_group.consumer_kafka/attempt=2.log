@@ -1,0 +1,27 @@
+{"timestamp":"2025-06-21T15:30:39.648338","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-21T15:30:39.652517","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-21T15:30:40.988165Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:30:40.989373Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:30:40.990627Z","level":"info","event":"Current task name:fact_status_group.consumer_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:30:40.991238Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:30:40.956227","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-21T15:30:40.990749","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-21T15:30:42.317052Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:30:43.414796Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:30:44.515506Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:31:30.988693Z","level":"error","event":"%4|1750519880.859|SESSTMOUT|rdkafka#consumer-1| [thrd:main]: Consumer group session timed out (in join-state steady) after 6443 ms without a successful response from the group coordinator (broker 1, last error was Success): revoking assignment and rejoining group","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T15:31:30.989759Z","level":"error","event":"%5|1750519888.760|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out HeartbeatRequest in flight (after 6905ms, timeout #0)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T15:31:30.990478Z","level":"error","event":"%4|1750519888.793|REQTMOUT|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator/1: Timed out 1 in-flight, 0 retry-queued, 0 out-queue, 0 partially-sent requests","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T15:31:30.990946Z","level":"error","event":"%3|1750519888.811|FAIL|rdkafka#consumer-1| [thrd:GroupCoordinator]: GroupCoordinator: kafka:9092: 1 request(s) timed out: disconnect (average rtt 207.433ms) (after 48923ms in state UP)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T15:31:32.247642Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:31:33.347012Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:31:34.447595Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:31:59.435476Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:32:00.536148Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:32:01.637412Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:32:02.738194Z","level":"info","event":"Không có message nào mới.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:32:02.738613","level":"info","event":"Đã thêm fact_status 7983 bản ghi mới, bỏ qua 1359 bản ghi trùng","logger":"dags.etl_fact_status"}
+{"timestamp":"2025-06-21T15:32:02.752664","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-21T15:32:02.796897Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:32:02.797510Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T15:32:02.798035Z","level":"info","event":"Task operator:<Task(PythonOperator): fact_status_group.consumer_kafka>","chan":"stdout","logger":"task"}

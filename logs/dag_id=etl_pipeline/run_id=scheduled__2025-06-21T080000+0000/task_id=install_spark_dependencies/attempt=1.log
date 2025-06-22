@@ -1,0 +1,148 @@
+{"timestamp":"2025-06-21T08:28:00.820068","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-21T08:28:00.821338","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-21T08:28:03.331621Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.332414Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.332707Z","level":"info","event":"Current task name:install_spark_dependencies","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.332912Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.333105Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.806232Z","level":"error","event":":: loading settings :: url = jar:file:/home/airflow/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.887640Z","level":"error","event":"Ivy Default Cache set to: /home/airflow/.ivy2.5.2/cache","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.888083Z","level":"error","event":"The jars for the packages stored in: /home/airflow/.ivy2.5.2/jars","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.893750Z","level":"error","event":"org.postgresql#postgresql added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.894341Z","level":"error","event":"org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.894720Z","level":"error","event":":: resolving dependencies :: org.apache.spark#spark-submit-parent-9f54b5a4-0032-47d2-bb7e-dfec338fa700;1.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:03.894980Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.168065Z","level":"error","event":"You probably access the destination server through a proxy server that is not well configured.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.169004Z","level":"error","event":"You probably access the destination server through a proxy server that is not well configured.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.183035Z","level":"error","event":"You probably access the destination server through a proxy server that is not well configured.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.183819Z","level":"error","event":"You probably access the destination server through a proxy server that is not well configured.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.187530Z","level":"error","event":"You probably access the destination server through a proxy server that is not well configured.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.188026Z","level":"error","event":"You probably access the destination server through a proxy server that is not well configured.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.188890Z","level":"error","event":"You probably access the destination server through a proxy server that is not well configured.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.189323Z","level":"error","event":"You probably access the destination server through a proxy server that is not well configured.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.209040Z","level":"error","event":":: resolution report :: resolve 314ms :: artifacts dl 0ms","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.209733Z","level":"error","event":"\t:: modules in use:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.210174Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.210430Z","level":"error","event":"\t|                  |            modules            ||   artifacts   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.210655Z","level":"error","event":"\t|       conf       | number| search|dwnlded|evicted|| number|dwnlded|","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.210799Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.210976Z","level":"error","event":"\t|      default     |   2   |   0   |   0   |   0   ||   0   |   0   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.211131Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.213079Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.213433Z","level":"error","event":":: problems summary ::","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.213661Z","level":"error","event":":::: WARNINGS","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.213834Z","level":"error","event":"\tHost repo1.maven.org not found. url=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.214019Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.214182Z","level":"error","event":"\tHost repo1.maven.org not found. url=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.214310Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.214436Z","level":"error","event":"\tHost repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.214573Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.214696Z","level":"error","event":"\tHost repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.214859Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.215028Z","level":"error","event":"\t\tmodule not found: org.postgresql#postgresql;42.7.1","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.215171Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.215330Z","level":"error","event":"\t==== local-m2-cache: tried","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.215487Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.215760Z","level":"error","event":"\t  file:/home/airflow/.m2/repository/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.216121Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.216405Z","level":"error","event":"\t  -- artifact org.postgresql#postgresql;42.7.1!postgresql.jar:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.216644Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.216806Z","level":"error","event":"\t  file:/home/airflow/.m2/repository/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.216978Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.217157Z","level":"error","event":"\t==== local-ivy-cache: tried","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.217293Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.217417Z","level":"error","event":"\t  /home/airflow/.ivy2.5.2/local/org.postgresql/postgresql/42.7.1/ivys/ivy.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.217551Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.217749Z","level":"error","event":"\t  -- artifact org.postgresql#postgresql;42.7.1!postgresql.jar:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.217929Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.218269Z","level":"error","event":"\t  /home/airflow/.ivy2.5.2/local/org.postgresql/postgresql/42.7.1/jars/postgresql.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.218497Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.218706Z","level":"error","event":"\t==== central: tried","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.218862Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.219028Z","level":"error","event":"\t  https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.219200Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.219386Z","level":"error","event":"\t  -- artifact org.postgresql#postgresql;42.7.1!postgresql.jar:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.219550Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.219724Z","level":"error","event":"\t  https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.219924Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.220082Z","level":"error","event":"\t==== spark-packages: tried","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.220253Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.220447Z","level":"error","event":"\t  https://repos.spark-packages.org/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.220702Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.220921Z","level":"error","event":"\t  -- artifact org.postgresql#postgresql;42.7.1!postgresql.jar:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.221172Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.221382Z","level":"error","event":"\t  https://repos.spark-packages.org/org/postgresql/postgresql/42.7.1/postgresql-42.7.1.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.221572Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.221870Z","level":"error","event":"\tHost repo1.maven.org not found. url=https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.222156Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.222414Z","level":"error","event":"\tHost repo1.maven.org not found. url=https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.222682Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.223010Z","level":"error","event":"\tHost repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.223306Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.223588Z","level":"error","event":"\tHost repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.223867Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.224141Z","level":"error","event":"\t\tmodule not found: org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.224394Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.224628Z","level":"error","event":"\t==== local-m2-cache: tried","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.224867Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.225101Z","level":"error","event":"\t  file:/home/airflow/.m2/repository/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.225333Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.225564Z","level":"error","event":"\t  -- artifact org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0!spark-sql-kafka-0-10_2.12.jar:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.225739Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.225888Z","level":"error","event":"\t  file:/home/airflow/.m2/repository/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.226037Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.226185Z","level":"error","event":"\t==== local-ivy-cache: tried","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.226333Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.226479Z","level":"error","event":"\t  /home/airflow/.ivy2.5.2/local/org.apache.spark/spark-sql-kafka-0-10_2.12/3.3.0/ivys/ivy.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.226625Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.226797Z","level":"error","event":"\t  -- artifact org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0!spark-sql-kafka-0-10_2.12.jar:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.226952Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.227102Z","level":"error","event":"\t  /home/airflow/.ivy2.5.2/local/org.apache.spark/spark-sql-kafka-0-10_2.12/3.3.0/jars/spark-sql-kafka-0-10_2.12.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.227280Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.227438Z","level":"error","event":"\t==== central: tried","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.227642Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.227920Z","level":"error","event":"\t  https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.228106Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.228275Z","level":"error","event":"\t  -- artifact org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0!spark-sql-kafka-0-10_2.12.jar:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.228437Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.228590Z","level":"error","event":"\t  https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.228740Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.228917Z","level":"error","event":"\t==== spark-packages: tried","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.229108Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.229270Z","level":"error","event":"\t  https://repos.spark-packages.org/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.pom","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.229556Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.229819Z","level":"error","event":"\t  -- artifact org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0!spark-sql-kafka-0-10_2.12.jar:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.230067Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.230320Z","level":"error","event":"\t  https://repos.spark-packages.org/org/apache/spark/spark-sql-kafka-0-10_2.12/3.3.0/spark-sql-kafka-0-10_2.12-3.3.0.jar","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.230515Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.230669Z","level":"error","event":"\t\t::::::::::::::::::::::::::::::::::::::::::::::","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.230849Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.230999Z","level":"error","event":"\t\t::          UNRESOLVED DEPENDENCIES         ::","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.231142Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.231287Z","level":"error","event":"\t\t::::::::::::::::::::::::::::::::::::::::::::::","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.231431Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.231574Z","level":"error","event":"\t\t:: org.postgresql#postgresql;42.7.1: not found","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.231715Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.231862Z","level":"error","event":"\t\t:: org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0: not found","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.232061Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.232307Z","level":"error","event":"\t\t::::::::::::::::::::::::::::::::::::::::::::::","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.232465Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.232614Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.232758Z","level":"error","event":"","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.232907Z","level":"error","event":":: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.233053Z","level":"error","event":"Exception in thread \"main\" java.lang.RuntimeException: [unresolved dependency: org.postgresql#postgresql;42.7.1: not found, unresolved dependency: org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0: not found]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.233201Z","level":"error","event":"\tat org.apache.spark.util.MavenUtils$.resolveMavenCoordinates(MavenUtils.scala:540)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.233348Z","level":"error","event":"\tat org.apache.spark.util.DependencyUtils$.resolveMavenDependencies(DependencyUtils.scala:123)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.233497Z","level":"error","event":"\tat org.apache.spark.deploy.SparkSubmit.prepareSubmitEnvironment(SparkSubmit.scala:341)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.233646Z","level":"error","event":"\tat org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:961)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.233792Z","level":"error","event":"\tat org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:204)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.233937Z","level":"error","event":"\tat org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:227)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.234080Z","level":"error","event":"\tat org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:96)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.234224Z","level":"error","event":"\tat org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1132)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.234370Z","level":"error","event":"\tat org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1141)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.234514Z","level":"error","event":"\tat org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.290842","level":"error","event":"Task failed with exception","logger":"task","error_detail":[{"exc_type":"PySparkRuntimeError","exc_value":"[JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":825,"name":"run"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1088,"name":"_execute_task"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/bases/operator.py","lineno":408,"name":"wrapper"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":212,"name":"execute"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":235,"name":"execute_callable"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/callback_runner.py","lineno":81,"name":"run"},{"filename":"/opt/airflow/dags/spark/build_spark.py","lineno":51,"name":"install_spark_dependencies"},{"filename":"/opt/airflow/dags/spark/build_spark.py","lineno":28,"name":"get_spark"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py","lineno":556,"name":"getOrCreate"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pyspark/core/context.py","lineno":523,"name":"getOrCreate"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pyspark/core/context.py","lineno":205,"name":"__init__"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pyspark/core/context.py","lineno":444,"name":"_ensure_initialized"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pyspark/java_gateway.py","lineno":111,"name":"launch_gateway"}]}]}
+{"timestamp":"2025-06-21T08:28:04.322312Z","level":"info","event":"Task instance in failure state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.322817Z","level":"info","event":"Task start","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.323175Z","level":"info","event":"Task:<Task(PythonOperator): install_spark_dependencies>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T08:28:04.323479Z","level":"info","event":"Failure caused by [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.","chan":"stdout","logger":"task"}

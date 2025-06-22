@@ -1,0 +1,104 @@
+{"timestamp":"2025-06-21T09:08:26.957350","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-21T09:08:26.958586","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-21T09:08:27.395529Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T09:08:27.396272Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T09:08:27.396694Z","level":"info","event":"Current task name:dim_product_group.producer_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T09:08:27.396976Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T09:08:28.178559Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:30.789146Z","level":"error","event":":: loading settings :: url = jar:file:/home/airflow/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.062257Z","level":"error","event":"Ivy Default Cache set to: /home/airflow/.ivy2.5.2/cache","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.063803Z","level":"error","event":"The jars for the packages stored in: /home/airflow/.ivy2.5.2/jars","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.085859Z","level":"error","event":"org.postgresql#postgresql added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.088844Z","level":"error","event":"org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.093320Z","level":"error","event":":: resolving dependencies :: org.apache.spark#spark-submit-parent-725bb550-86e8-447e-85df-16475dddc3ed;1.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.094983Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.380945Z","level":"error","event":"\tfound org.postgresql#postgresql;42.7.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.434840Z","level":"error","event":"\tfound org.checkerframework#checker-qual;3.41.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.554367Z","level":"error","event":"\tfound org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.625492Z","level":"error","event":"\tfound org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.664911Z","level":"error","event":"\tfound org.apache.kafka#kafka-clients;2.8.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.698981Z","level":"error","event":"\tfound org.lz4#lz4-java;1.8.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.747087Z","level":"error","event":"\tfound org.xerial.snappy#snappy-java;1.1.8.4 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.809755Z","level":"error","event":"\tfound org.slf4j#slf4j-api;1.7.32 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.871178Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-runtime;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.904895Z","level":"error","event":"\tfound org.spark-project.spark#unused;1.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:31.960224Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-api;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.004980Z","level":"error","event":"\tfound commons-logging#commons-logging;1.1.3 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.049735Z","level":"error","event":"\tfound com.google.code.findbugs#jsr305;3.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.181834Z","level":"error","event":"\tfound org.apache.commons#commons-pool2;2.11.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.361977Z","level":"error","event":":: resolution report :: resolve 1219ms :: artifacts dl 50ms","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.374732Z","level":"error","event":"\t:: modules in use:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.409861Z","level":"error","event":"\tcom.google.code.findbugs#jsr305;3.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.410741Z","level":"error","event":"\tcommons-logging#commons-logging;1.1.3 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.411299Z","level":"error","event":"\torg.apache.commons#commons-pool2;2.11.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.411737Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-api;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.412078Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-runtime;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.412462Z","level":"error","event":"\torg.apache.kafka#kafka-clients;2.8.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.413696Z","level":"error","event":"\torg.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.414923Z","level":"error","event":"\torg.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.415785Z","level":"error","event":"\torg.checkerframework#checker-qual;3.41.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.416266Z","level":"error","event":"\torg.lz4#lz4-java;1.8.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.416702Z","level":"error","event":"\torg.postgresql#postgresql;42.7.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.417011Z","level":"error","event":"\torg.slf4j#slf4j-api;1.7.32 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.417385Z","level":"error","event":"\torg.spark-project.spark#unused;1.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.417782Z","level":"error","event":"\torg.xerial.snappy#snappy-java;1.1.8.4 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.418300Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.421248Z","level":"error","event":"\t|                  |            modules            ||   artifacts   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.422469Z","level":"error","event":"\t|       conf       | number| search|dwnlded|evicted|| number|dwnlded|","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.423771Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.424866Z","level":"error","event":"\t|      default     |   14  |   0   |   0   |   0   ||   14  |   0   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.425402Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.455958Z","level":"error","event":":: retrieving :: org.apache.spark#spark-submit-parent-725bb550-86e8-447e-85df-16475dddc3ed","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.456820Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.483248Z","level":"error","event":"\t0 artifacts copied, 14 already retrieved (0kB/27ms)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:32.985195Z","level":"error","event":"25/06/21 09:08:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:33.377134Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:33.381586Z","level":"error","event":"Setting default log level to \"WARN\".","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:33.384961Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:08:58.075679","level":"info","event":"Thử lần 1/5 kiểm tra topic 'dim_product'...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:03.268390","level":"warning","event":"⚠Lỗi khi kiểm tra/tạo topic 'dim_product': KafkaError{code=_TRANSPORT,val=-195,str=\"Failed to get metadata: Local: Broker transport failure\"}","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:03.376779","level":"info","event":"Đợi 3 giây rồi thử lại...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:08.506823","level":"info","event":"Thử lần 2/5 kiểm tra topic 'dim_product'...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:13.743920","level":"warning","event":"⚠Lỗi khi kiểm tra/tạo topic 'dim_product': KafkaError{code=_TRANSPORT,val=-195,str=\"Failed to get metadata: Local: Broker transport failure\"}","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:13.748368","level":"info","event":"Đợi 3 giây rồi thử lại...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:14.880937Z","level":"error","event":"%3|1750496948.508|FAIL|rdkafka#producer-1| [thrd:kafka:9092/bootstrap]: kafka:9092/bootstrap: Failed to resolve 'kafka:9092': Temporary failure in name resolution (after 10426ms in state CONNECT)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:09:14.881445Z","level":"error","event":"%3|1750496948.508|FAIL|rdkafka#producer-2| [thrd:kafka:9092/bootstrap]: kafka:9092/bootstrap: Failed to resolve 'kafka:9092': Temporary failure in name resolution (after 10425ms in state CONNECT)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:09:16.024322","level":"info","event":"Thử lần 3/5 kiểm tra topic 'dim_product'...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:16.037402","level":"info","event":"Đang tạo topic 'dim_product' với 5 partitions...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:17.526272","level":"info","event":"Đã tạo topic: dim_product","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:09:17.534101","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T09:11:37.218794","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T09:11:44.629567","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T09:13:00.379108Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 0) / 1]\r25/06/21 09:12:08 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:13:00.380422Z","level":"error","event":"25/06/21 09:12:23 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:13:00.381017Z","level":"error","event":"25/06/21 09:12:37 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:13:00.381428Z","level":"error","event":"25/06/21 09:12:52 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:13:07.001003Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 0) / 1]\r25/06/21 09:13:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:13:21.543381Z","level":"error","event":"25/06/21 09:13:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:13:42.378180Z","level":"error","event":"25/06/21 09:13:37 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:13:50.098638Z","level":"error","event":"25/06/21 09:13:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T09:14:04.789075","level":"info","event":"Tổng số bản ghi cần gửi: 20","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T09:14:05.436045","level":"info","event":"Batch 1: 20 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T09:14:06.748342","level":"info","event":"Delivered to dim_product [0] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.748540","level":"info","event":"Delivered to dim_product [0] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.772985Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"running_elsewhere","message":"TI is already running elsewhere","current_hostname":"ef0ff41159b2","current_pid":1945}},"logger":"task"}
+{"timestamp":"2025-06-21T09:14:06.748604","level":"info","event":"Delivered to dim_product [0] at offset 2","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.748651","level":"info","event":"Delivered to dim_product [0] at offset 3","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.748699","level":"info","event":"Delivered to dim_product [0] at offset 4","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.749719","level":"info","event":"Delivered to dim_product [1] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.749873","level":"info","event":"Delivered to dim_product [1] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.752330","level":"info","event":"Delivered to dim_product [2] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.752487","level":"info","event":"Delivered to dim_product [2] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.754120","level":"info","event":"Delivered to dim_product [3] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.754299","level":"info","event":"Delivered to dim_product [3] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.754384","level":"info","event":"Delivered to dim_product [3] at offset 2","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.754457","level":"info","event":"Delivered to dim_product [3] at offset 3","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.755606","level":"info","event":"Delivered to dim_product [4] at offset 0","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.755703","level":"info","event":"Delivered to dim_product [4] at offset 1","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.755752","level":"info","event":"Delivered to dim_product [4] at offset 2","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.755793","level":"info","event":"Delivered to dim_product [4] at offset 3","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.755833","level":"info","event":"Delivered to dim_product [4] at offset 4","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.755872","level":"info","event":"Delivered to dim_product [4] at offset 5","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.755910","level":"info","event":"Delivered to dim_product [4] at offset 6","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T09:14:06.807458Z","level":"error","event":"Task killed!","logger":"task"}
+{"timestamp":"2025-06-21T09:14:07.484156Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 0) / 1]\r\r[Stage 0:>                                                          (0 + 1) / 1]\r\r                                                                                \r\r[Stage 1:>                                                          (0 + 1) / 1]\r\r                                                                                \r\r[Stage 7:>                                                          (0 + 1) / 1]","chan":"stderr","logger":"task"}

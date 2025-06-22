@@ -1,0 +1,23 @@
+{"timestamp":"2025-06-21T16:30:37.002675","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-21T16:30:37.003281","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-21T16:30:37.662460Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T16:30:37.663165Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T16:30:37.663520Z","level":"info","event":"Current task name:dim_date_group.consumer_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T16:30:37.663969Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T16:30:37.651005","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-21T16:30:37.684876","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-21T16:30:38.968014","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:40.070943","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:41.172706","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:44.360730","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:45.462898","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:46.565127","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:47.289643","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:48.390569","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:49.491208","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:50.593612","level":"info","event":"Không có message nào mới.","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:50.595810","level":"info","event":"Đã thêm 0 bản ghi mới vào dim_date, bỏ qua 1461 bản ghi trùng","logger":"dags.etl_dim_date"}
+{"timestamp":"2025-06-21T16:30:50.603969","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-21T16:30:50.624225Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T16:30:50.624724Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T16:30:50.624981Z","level":"info","event":"Task operator:<Task(PythonOperator): dim_date_group.consumer_kafka>","chan":"stdout","logger":"task"}

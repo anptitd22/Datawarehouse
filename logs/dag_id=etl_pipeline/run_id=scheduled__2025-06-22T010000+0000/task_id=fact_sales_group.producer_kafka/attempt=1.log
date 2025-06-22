@@ -1,0 +1,97 @@
+{"timestamp":"2025-06-22T01:35:54.031000","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-22T01:35:54.033014","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-22T01:35:54.958021Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-22T01:35:54.960598Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-22T01:35:54.961398Z","level":"info","event":"Current task name:fact_sales_group.producer_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-22T01:35:54.962428Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-22T01:35:56.515462Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.538934Z","level":"error","event":":: loading settings :: url = jar:file:/home/airflow/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.678264Z","level":"error","event":"Ivy Default Cache set to: /home/airflow/.ivy2.5.2/cache","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.679453Z","level":"error","event":"The jars for the packages stored in: /home/airflow/.ivy2.5.2/jars","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.687536Z","level":"error","event":"org.postgresql#postgresql added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.688774Z","level":"error","event":"org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.689612Z","level":"error","event":":: resolving dependencies :: org.apache.spark#spark-submit-parent-aedb9696-bc0d-49ce-bff4-52b3fd70c7c0;1.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.690356Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.893254Z","level":"error","event":"\tfound org.postgresql#postgresql;42.7.1 in spark-list","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:35:59.946996Z","level":"error","event":"\tfound org.checkerframework#checker-qual;3.41.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:00.148396Z","level":"error","event":"\tfound org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:00.339950Z","level":"error","event":"\tfound org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:00.459729Z","level":"error","event":"\tfound org.apache.kafka#kafka-clients;2.8.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:00.539890Z","level":"error","event":"\tfound org.lz4#lz4-java;1.8.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:00.619995Z","level":"error","event":"\tfound org.xerial.snappy#snappy-java;1.1.8.4 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:00.700412Z","level":"error","event":"\tfound org.slf4j#slf4j-api;1.7.32 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:00.857729Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-runtime;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:00.941431Z","level":"error","event":"\tfound org.spark-project.spark#unused;1.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.119302Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-api;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.236788Z","level":"error","event":"\tfound commons-logging#commons-logging;1.1.3 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.303673Z","level":"error","event":"\tfound com.google.code.findbugs#jsr305;3.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.380966Z","level":"error","event":"\tfound org.apache.commons#commons-pool2;2.11.1 in spark-list","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.560314Z","level":"error","event":":: resolution report :: resolve 1762ms :: artifacts dl 108ms","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.579093Z","level":"error","event":"\t:: modules in use:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.579973Z","level":"error","event":"\tcom.google.code.findbugs#jsr305;3.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.581044Z","level":"error","event":"\tcommons-logging#commons-logging;1.1.3 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.582409Z","level":"error","event":"\torg.apache.commons#commons-pool2;2.11.1 from spark-list in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.590413Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-api;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.597025Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-runtime;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.601363Z","level":"error","event":"\torg.apache.kafka#kafka-clients;2.8.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.604473Z","level":"error","event":"\torg.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.606211Z","level":"error","event":"\torg.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.607323Z","level":"error","event":"\torg.checkerframework#checker-qual;3.41.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.608131Z","level":"error","event":"\torg.lz4#lz4-java;1.8.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.608836Z","level":"error","event":"\torg.postgresql#postgresql;42.7.1 from spark-list in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.609623Z","level":"error","event":"\torg.slf4j#slf4j-api;1.7.32 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.610691Z","level":"error","event":"\torg.spark-project.spark#unused;1.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.611350Z","level":"error","event":"\torg.xerial.snappy#snappy-java;1.1.8.4 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.612111Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.612699Z","level":"error","event":"\t|                  |            modules            ||   artifacts   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.613261Z","level":"error","event":"\t|       conf       | number| search|dwnlded|evicted|| number|dwnlded|","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.613772Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.614366Z","level":"error","event":"\t|      default     |   14  |   0   |   0   |   0   ||   14  |   0   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.614973Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.615575Z","level":"error","event":":: retrieving :: org.apache.spark#spark-submit-parent-aedb9696-bc0d-49ce-bff4-52b3fd70c7c0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.616150Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:01.635568Z","level":"error","event":"\t0 artifacts copied, 14 already retrieved (0kB/38ms)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:02.199516Z","level":"error","event":"25/06/22 01:36:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:02.663757Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:02.665195Z","level":"error","event":"Setting default log level to \"WARN\".","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:02.666450Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:04.878535Z","level":"error","event":"25/06/22 01:36:04 WARN Utils: Service 'SparkUI' could not bind on port 4050. Attempting port 4051.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-22T01:36:11.481266","level":"info","event":"Thử lần 1/3 kiểm tra topic 'fact_sales'...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-22T01:36:11.545489","level":"info","event":"Đang tạo topic 'fact_sales' với 5 partitions...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-22T01:36:11.761808","level":"info","event":"Đã tạo topic: fact_sales","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-22T01:36:11.864241","level":"info","event":"extract fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:36:16.970489","level":"info","event":"transform fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:36:16.975688","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-22T01:36:17.035994","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-22T01:36:18.703584","level":"warning","event":"/opt/airflow/dags/etl_fact_sales.py:34: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  date_df = pd.read_sql(\"SELECT date, date_key FROM dim_date\", sql_conn)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-22T01:36:18.762592","level":"warning","event":"/opt/airflow/dags/etl_fact_sales.py:37: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  customer_df = pd.read_sql(\"SELECT client_id, customer_key FROM dim_customer\", sql_conn)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-22T01:36:18.802551","level":"warning","event":"/opt/airflow/dags/etl_fact_sales.py:40: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  product_df = pd.read_sql(\"SELECT product_id, product_key FROM dim_product\", sql_conn)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-22T01:36:18.832402","level":"warning","event":"/opt/airflow/dags/etl_fact_sales.py:43: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.\n  order_df = pd.read_sql(\"SELECT order_item_id, order_key FROM dim_order\", sql_conn)\n","logger":"py.warnings"}
+{"timestamp":"2025-06-22T01:36:18.939062","level":"info","event":"Mapping dimension keys cho fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:36:20.018831","level":"info","event":"Lọc bản ghi thiếu dimension keys","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:36:20.070750","level":"info","event":"Extract và transform fact_sales thành công","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:36:56.450850","level":"info","event":"Tổng số bản ghi cần gửi: 5000","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:02.098950","level":"info","event":"Batch 1: 5000 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:09.585928","level":"info","event":"extract fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:09.761468","level":"info","event":"transform fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:09.765789","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-22T01:37:09.802562","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-22T01:37:10.482224","level":"info","event":"Mapping dimension keys cho fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:10.963897","level":"info","event":"Lọc bản ghi thiếu dimension keys","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:10.994392","level":"info","event":"Extract và transform fact_sales thành công","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:14.136365","level":"info","event":"Tổng số bản ghi cần gửi: 4342","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:16.022266","level":"info","event":"Batch 2: 4342 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:20.111536","level":"info","event":"extract fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:20.160904","level":"info","event":"transform fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:20.161359","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-22T01:37:20.175984","level":"info","event":"Connection Retrieved 'sqlserver_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-22T01:37:20.571822","level":"info","event":"Mapping dimension keys cho fact_sales","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:20.770636","level":"info","event":"Lọc bản ghi thiếu dimension keys","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:20.781455","level":"info","event":"Extract và transform fact_sales thành công","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:21.497572","level":"info","event":"Đã hết dữ liệu để push lên Kafka.","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:21.497982","level":"info","event":"Đã đẩy 9342 bản ghi lên Kafka.","logger":"dags.etl_fact_sales"}
+{"timestamp":"2025-06-22T01:37:22.504845","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-22T01:37:22.536572Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-22T01:37:22.537490Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-22T01:37:22.538368Z","level":"info","event":"Task operator:<Task(PythonOperator): fact_sales_group.producer_kafka>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-22T01:37:23.037846Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 1) / 1]\r\r                                                                                \r\r[Stage 1:>                                                          (0 + 1) / 1]\r\r[Stage 3:>                                                          (0 + 1) / 1]\r\r                                                                                \r\r[Stage 4:>                                                          (0 + 1) / 1]\r\r                                                                                \r\r[Stage 7:>                                                          (0 + 1) / 1]\r\r[Stage 8:>                                                          (0 + 1) / 1]\r\r                                                                                \r\r[Stage 11:>                                                         (0 + 1) / 1]\r\r                                                                                \r\r[Stage 12:>                                                         (0 + 1) / 1]\r\r                                                                                \r\r[Stage 15:>                                                         (0 + 1) / 1]\r\r                                                                                \r\r[Stage 18:>                                                         (0 + 1) / 1]\r\r[Stage 19:>                                                         (0 + 1) / 1]","chan":"stderr","logger":"task"}

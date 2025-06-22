@@ -1,0 +1,134 @@
+{"timestamp":"2025-06-21T14:34:16.708113","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-21T14:34:16.709718","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-21T14:34:17.972736Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:34:17.978685Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:34:17.980118Z","level":"info","event":"Current task name:dim_order_group.producer_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:34:17.983940Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:34:19.377352Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.455980Z","level":"error","event":":: loading settings :: url = jar:file:/home/airflow/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.598477Z","level":"error","event":"Ivy Default Cache set to: /home/airflow/.ivy2.5.2/cache","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.599965Z","level":"error","event":"The jars for the packages stored in: /home/airflow/.ivy2.5.2/jars","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.608052Z","level":"error","event":"org.postgresql#postgresql added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.609262Z","level":"error","event":"org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.610390Z","level":"error","event":":: resolving dependencies :: org.apache.spark#spark-submit-parent-73853616-b4ae-405d-9a12-5549d0f5360f;1.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.611390Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.810012Z","level":"error","event":"\tfound org.postgresql#postgresql;42.7.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:22.870668Z","level":"error","event":"\tfound org.checkerframework#checker-qual;3.41.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.030554Z","level":"error","event":"\tfound org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.188962Z","level":"error","event":"\tfound org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.284300Z","level":"error","event":"\tfound org.apache.kafka#kafka-clients;2.8.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.378707Z","level":"error","event":"\tfound org.lz4#lz4-java;1.8.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.450012Z","level":"error","event":"\tfound org.xerial.snappy#snappy-java;1.1.8.4 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.543041Z","level":"error","event":"\tfound org.slf4j#slf4j-api;1.7.32 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.672323Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-runtime;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.729258Z","level":"error","event":"\tfound org.spark-project.spark#unused;1.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:23.843643Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-api;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.026859Z","level":"error","event":"\tfound commons-logging#commons-logging;1.1.3 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.129454Z","level":"error","event":"\tfound com.google.code.findbugs#jsr305;3.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.303140Z","level":"error","event":"\tfound org.apache.commons#commons-pool2;2.11.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.484476Z","level":"error","event":":: resolution report :: resolve 1760ms :: artifacts dl 115ms","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.485534Z","level":"error","event":"\t:: modules in use:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.487400Z","level":"error","event":"\tcom.google.code.findbugs#jsr305;3.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.488193Z","level":"error","event":"\tcommons-logging#commons-logging;1.1.3 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.488724Z","level":"error","event":"\torg.apache.commons#commons-pool2;2.11.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.489402Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-api;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.489800Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-runtime;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.490686Z","level":"error","event":"\torg.apache.kafka#kafka-clients;2.8.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.491222Z","level":"error","event":"\torg.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.491972Z","level":"error","event":"\torg.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.492462Z","level":"error","event":"\torg.checkerframework#checker-qual;3.41.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.492958Z","level":"error","event":"\torg.lz4#lz4-java;1.8.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.493534Z","level":"error","event":"\torg.postgresql#postgresql;42.7.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.494090Z","level":"error","event":"\torg.slf4j#slf4j-api;1.7.32 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.494590Z","level":"error","event":"\torg.spark-project.spark#unused;1.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.495121Z","level":"error","event":"\torg.xerial.snappy#snappy-java;1.1.8.4 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.495766Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.496327Z","level":"error","event":"\t|                  |            modules            ||   artifacts   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.496914Z","level":"error","event":"\t|       conf       | number| search|dwnlded|evicted|| number|dwnlded|","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.497432Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.498119Z","level":"error","event":"\t|      default     |   14  |   0   |   0   |   0   ||   14  |   0   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.501151Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.534834Z","level":"error","event":":: retrieving :: org.apache.spark#spark-submit-parent-73853616-b4ae-405d-9a12-5549d0f5360f","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.541694Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:24.576825Z","level":"error","event":"\t0 artifacts copied, 14 already retrieved (0kB/40ms)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:25.216519Z","level":"error","event":"25/06/21 14:34:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:25.853308Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:25.856605Z","level":"error","event":"Setting default log level to \"WARN\".","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:25.868975Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:29.120667Z","level":"error","event":"25/06/21 14:34:29 WARN Utils: Service 'SparkUI' could not bind on port 4050. Attempting port 4051.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:34:37.262717","level":"info","event":"Thử lần 1/5 kiểm tra topic 'dim_order'...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T14:34:37.320894","level":"info","event":"Đang tạo topic 'dim_order' với 5 partitions...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T14:34:37.560974","level":"info","event":"Đã tạo topic: dim_order","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T14:34:37.663155","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:40.523908","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:41.168289","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:45.851493","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:46.289632","level":"info","event":"Batch 1: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:47.346998","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:47.416295","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:47.493545","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:48.174874","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:48.849766","level":"info","event":"Batch 2: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:49.859874","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:49.942187","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:50.031911","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:50.482951","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:50.720004","level":"info","event":"Batch 3: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:51.275705","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:51.327327","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:51.380667","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:51.746701","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:51.950298","level":"info","event":"Batch 4: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:52.456404","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:52.503821","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:52.546082","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:52.854619","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:53.114532","level":"info","event":"Batch 5: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:53.560813","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:53.613384","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:53.659583","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:54.099484","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:54.289341","level":"info","event":"Batch 6: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:54.829154","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:54.876475","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:54.915042","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:55.181420","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:55.362266","level":"info","event":"Batch 7: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:55.792996","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:55.868523","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:55.908263","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:56.128902","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:56.283458","level":"info","event":"Batch 8: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:56.763531","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:56.802647","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:56.836418","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:57.066583","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:57.242497","level":"info","event":"Batch 9: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:57.702325","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:57.744774","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:57.785138","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:58.019580","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:58.179060","level":"info","event":"Batch 10: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:58.580845","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:58.615703","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:58.647456","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:58.848712","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:58.983894","level":"info","event":"Batch 11: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:59.416639","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:59.457723","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:59.492342","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:59.733233","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:34:59.847203","level":"info","event":"Batch 12: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:00.192438","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:00.225582","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:00.251626","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:00.436344","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:00.549060","level":"info","event":"Batch 13: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:00.940230","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:00.980199","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:01.014582","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:01.207363","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:01.352168","level":"info","event":"Batch 14: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:35:01.380181Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_found","message":"Task Instance not found"}},"logger":"task"}
+{"timestamp":"2025-06-21T14:35:02.045144Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 1) / 1]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:35:02.047146Z","level":"error","event":"Task killed!","logger":"task"}

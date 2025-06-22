@@ -1,0 +1,539 @@
+{"timestamp":"2025-06-21T14:42:39.143317","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-21T14:42:39.144147","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-21T14:42:40.177021Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:42:40.178316Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:42:40.178998Z","level":"info","event":"Current task name:dim_order_group.producer_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:42:40.179589Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:42:40.754672Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:42.981258Z","level":"error","event":":: loading settings :: url = jar:file:/home/airflow/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.084347Z","level":"error","event":"Ivy Default Cache set to: /home/airflow/.ivy2.5.2/cache","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.085376Z","level":"error","event":"The jars for the packages stored in: /home/airflow/.ivy2.5.2/jars","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.092959Z","level":"error","event":"org.postgresql#postgresql added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.094033Z","level":"error","event":"org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.095096Z","level":"error","event":":: resolving dependencies :: org.apache.spark#spark-submit-parent-342ca38a-a6a6-46d0-8c5f-17d70e3ae64f;1.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.095779Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.257597Z","level":"error","event":"\tfound org.postgresql#postgresql;42.7.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.294706Z","level":"error","event":"\tfound org.checkerframework#checker-qual;3.41.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.404901Z","level":"error","event":"\tfound org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.475739Z","level":"error","event":"\tfound org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.518398Z","level":"error","event":"\tfound org.apache.kafka#kafka-clients;2.8.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.558544Z","level":"error","event":"\tfound org.lz4#lz4-java;1.8.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.600964Z","level":"error","event":"\tfound org.xerial.snappy#snappy-java;1.1.8.4 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.641589Z","level":"error","event":"\tfound org.slf4j#slf4j-api;1.7.32 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.710973Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-runtime;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.748541Z","level":"error","event":"\tfound org.spark-project.spark#unused;1.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.796677Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-api;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.844112Z","level":"error","event":"\tfound commons-logging#commons-logging;1.1.3 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.873483Z","level":"error","event":"\tfound com.google.code.findbugs#jsr305;3.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.907072Z","level":"error","event":"\tfound org.apache.commons#commons-pool2;2.11.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.976060Z","level":"error","event":":: resolution report :: resolve 836ms :: artifacts dl 45ms","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.977124Z","level":"error","event":"\t:: modules in use:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.977741Z","level":"error","event":"\tcom.google.code.findbugs#jsr305;3.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.978635Z","level":"error","event":"\tcommons-logging#commons-logging;1.1.3 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.979761Z","level":"error","event":"\torg.apache.commons#commons-pool2;2.11.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.980425Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-api;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.981022Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-runtime;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.981592Z","level":"error","event":"\torg.apache.kafka#kafka-clients;2.8.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.982137Z","level":"error","event":"\torg.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.982638Z","level":"error","event":"\torg.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.983124Z","level":"error","event":"\torg.checkerframework#checker-qual;3.41.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.983677Z","level":"error","event":"\torg.lz4#lz4-java;1.8.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.984168Z","level":"error","event":"\torg.postgresql#postgresql;42.7.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.984816Z","level":"error","event":"\torg.slf4j#slf4j-api;1.7.32 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.985565Z","level":"error","event":"\torg.spark-project.spark#unused;1.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.986187Z","level":"error","event":"\torg.xerial.snappy#snappy-java;1.1.8.4 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.987151Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.987815Z","level":"error","event":"\t|                  |            modules            ||   artifacts   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.988454Z","level":"error","event":"\t|       conf       | number| search|dwnlded|evicted|| number|dwnlded|","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.989025Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.989522Z","level":"error","event":"\t|      default     |   14  |   0   |   0   |   0   ||   14  |   0   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.989959Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.993556Z","level":"error","event":":: retrieving :: org.apache.spark#spark-submit-parent-342ca38a-a6a6-46d0-8c5f-17d70e3ae64f","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:43.994574Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:44.026298Z","level":"error","event":"\t0 artifacts copied, 14 already retrieved (0kB/32ms)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:44.466410Z","level":"error","event":"25/06/21 14:42:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:44.860120Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:44.861887Z","level":"error","event":"Setting default log level to \"WARN\".","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:44.862674Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:42:53.484705","level":"info","event":"Thử lần 1/5 kiểm tra topic 'dim_order'...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T14:42:53.542807","level":"info","event":"Topic 'dim_order' đã tồn tại.","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T14:42:53.644361","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:42:56.390096","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:42:57.060827","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:01.444753","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:01.713841","level":"info","event":"Batch 1: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:02.433701","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:02.484033","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:02.555209","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:03.037338","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:03.298815","level":"info","event":"Batch 2: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:03.891084","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:03.935903","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:03.979266","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:04.305769","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:04.541144","level":"info","event":"Batch 3: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:05.168466","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:05.262035","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:05.361421","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:06.006140","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:06.226930","level":"info","event":"Batch 4: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:06.720464","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:06.801242","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:06.838560","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.077421","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.227511","level":"info","event":"Batch 5: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.686560","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.760241","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.823041","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.755149","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:06.636971","level":"info","event":"Batch 6: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.025041","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.059686","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.094305","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.293486","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.405066","level":"info","event":"Batch 7: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.800513","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.839113","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:07.873218","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:08.049973","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:08.175361","level":"info","event":"Batch 8: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:08.546982","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:08.578674","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:08.617642","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:08.826705","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:08.945994","level":"info","event":"Batch 9: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:09.328759","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:09.376886","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:09.418034","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:09.603138","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:09.728213","level":"info","event":"Batch 10: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:10.104461","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:10.144831","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:10.187581","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:10.413017","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:10.583395","level":"info","event":"Batch 11: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:10.967880","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:11.012547","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:11.050005","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:11.236453","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:11.360528","level":"info","event":"Batch 12: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:11.736692","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:11.769765","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:11.803496","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:11.965619","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:12.094948","level":"info","event":"Batch 13: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:12.429708","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:12.465305","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:12.495908","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:12.653154","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:12.767127","level":"info","event":"Batch 14: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:13.137381","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:13.172975","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:13.210842","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:13.410644","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:13.547215","level":"info","event":"Batch 15: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:13.921057","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:13.976956","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:14.009196","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:14.208761","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:14.344026","level":"info","event":"Batch 16: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:14.739647","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:14.789073","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:14.825092","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:14.990155","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:15.086992","level":"info","event":"Batch 17: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:15.400858","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:15.437161","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:15.470856","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:15.678766","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:15.782060","level":"info","event":"Batch 18: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:16.092158","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:16.136842","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:16.169675","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:16.377318","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:16.493367","level":"info","event":"Batch 19: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:16.872145","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:16.905867","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:16.934346","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:17.092243","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:17.183795","level":"info","event":"Batch 20: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:17.531187","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:17.566223","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:17.597752","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:17.780713","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:17.895656","level":"info","event":"Batch 21: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:18.241256","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:18.276149","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:18.310041","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:18.515114","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:18.617474","level":"info","event":"Batch 22: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:18.941557","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:18.972746","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:19.006167","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:19.153191","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:19.275379","level":"info","event":"Batch 23: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:19.666955","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:19.734270","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:19.771257","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:19.959466","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:20.070477","level":"info","event":"Batch 24: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:20.423050","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:20.459059","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:20.491078","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:20.662896","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:20.787940","level":"info","event":"Batch 25: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:21.129301","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:21.166241","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:21.197227","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:21.349902","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:21.458005","level":"info","event":"Batch 26: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:21.825110","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:21.861163","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:21.888573","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:22.082237","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:22.185748","level":"info","event":"Batch 27: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:22.562485","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:22.597991","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:22.627852","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:22.810557","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:22.920992","level":"info","event":"Batch 28: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:23.278086","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:23.312575","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:23.341770","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:23.529938","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:23.651680","level":"info","event":"Batch 29: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:23.997366","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:24.034599","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:24.069500","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:24.301858","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:24.424511","level":"info","event":"Batch 30: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:24.821554","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:24.861413","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:24.895328","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:25.082781","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:25.205993","level":"info","event":"Batch 31: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:25.551496","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:25.591059","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:25.622721","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:25.754952","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:25.839161","level":"info","event":"Batch 32: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:26.176431","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:26.235186","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:26.268433","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:26.427845","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:26.540534","level":"info","event":"Batch 33: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:26.895163","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:26.926896","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:26.956723","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:27.108539","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:27.205811","level":"info","event":"Batch 34: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:27.515524","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:27.544761","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:27.571981","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:27.730860","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:27.819593","level":"info","event":"Batch 35: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.147863","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.175692","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.203894","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.343458","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.439596","level":"info","event":"Batch 36: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.736246","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.762396","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.794911","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:28.947690","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:29.045171","level":"info","event":"Batch 37: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:29.377919","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:29.409758","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:29.437703","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:29.625031","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:29.743455","level":"info","event":"Batch 38: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:30.121703","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:30.158856","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:30.190421","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:30.370447","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:30.481572","level":"info","event":"Batch 39: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:30.828649","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:30.868106","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:30.897581","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:31.073363","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:31.196599","level":"info","event":"Batch 40: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:31.539782","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:31.570168","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:31.603339","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:31.776300","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:31.877791","level":"info","event":"Batch 41: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:32.207401","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:32.238483","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:32.267389","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:32.408833","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:32.496079","level":"info","event":"Batch 42: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:32.810752","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:32.848507","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:32.875840","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:33.049953","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:33.165132","level":"info","event":"Batch 43: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:33.491594","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:33.540302","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:33.578358","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:33.768726","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:33.877528","level":"info","event":"Batch 44: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:34.172242","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:34.197107","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:34.222982","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:34.372721","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:34.468985","level":"info","event":"Batch 45: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:34.779903","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:34.824843","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:34.860299","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.030951","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.138876","level":"info","event":"Batch 46: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.535843","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.584234","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.623297","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.009887","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.185929","level":"info","event":"Batch 47: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.345035","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.086066","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.128805","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.370564","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.483909","level":"info","event":"Batch 48: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.872216","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.916268","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:35.951271","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.146352","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.251509","level":"info","event":"Batch 49: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.594359","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.625729","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.653732","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.827857","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:36.931953","level":"info","event":"Batch 50: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:37.256047","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:37.291283","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:37.323558","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:37.488738","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:37.605108","level":"info","event":"Batch 51: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:37.938577","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:37.973248","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:38.004404","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:38.186519","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:38.298929","level":"info","event":"Batch 52: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:38.642276","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:38.677595","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:38.705008","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:38.864313","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:39.011148","level":"info","event":"Batch 53: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:39.347580","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:39.381752","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:39.411398","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:39.596942","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:39.727507","level":"info","event":"Batch 54: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:40.062511","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:40.098056","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:40.128075","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:40.308619","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:40.415851","level":"info","event":"Batch 55: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:40.779660","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:40.815358","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:40.845786","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:41.029680","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:41.145961","level":"info","event":"Batch 56: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:41.490618","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:41.524908","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:41.551696","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:41.733746","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:41.838776","level":"info","event":"Batch 57: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:42.177359","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:42.211414","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:42.238491","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:42.414642","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:42.518354","level":"info","event":"Batch 58: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:42.861094","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:42.889827","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:42.923386","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:43.090637","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:43.198698","level":"info","event":"Batch 59: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:43.592849","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:43.656073","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:43.728918","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:44.022629","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:44.149315","level":"info","event":"Batch 60: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:44.488488","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:44.528894","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:44.561613","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:44.729538","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:44.833454","level":"info","event":"Batch 61: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:45.197038","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:45.225217","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:45.251157","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:45.404744","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:45.496015","level":"info","event":"Batch 62: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:45.838760","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:45.891619","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:45.928338","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:46.068027","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:46.160432","level":"info","event":"Batch 63: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:46.499702","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:46.540194","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:46.574889","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:46.738304","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:46.828537","level":"info","event":"Batch 64: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:47.197273","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:47.224295","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:47.248977","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:47.397805","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:47.502358","level":"info","event":"Batch 65: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:47.849387","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:47.881698","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:47.914222","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:48.102291","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:48.190226","level":"info","event":"Batch 66: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:48.482976","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:48.518122","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:48.550139","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:48.722522","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:48.820507","level":"info","event":"Batch 67: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:49.153325","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:49.185284","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:49.214862","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:49.366007","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:49.484478","level":"info","event":"Batch 68: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:49.801837","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:49.871729","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:49.940996","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:50.168195","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:50.257680","level":"info","event":"Batch 69: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:50.596900","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:50.624228","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:50.649078","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:50.791998","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:50.889763","level":"info","event":"Batch 70: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:51.195919","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:51.229796","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:51.259103","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:51.456119","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:51.572673","level":"info","event":"Batch 71: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:51.922701","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:51.958231","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:51.991158","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:52.178516","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:52.278339","level":"info","event":"Batch 72: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:52.613202","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:52.646754","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:52.674246","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:52.847985","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:52.964402","level":"info","event":"Batch 73: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:53.312031","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:53.345496","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:53.375848","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:53.608984","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:53.752697","level":"info","event":"Batch 74: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:54.103470","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:54.147564","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:54.182755","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:54.393638","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:54.513859","level":"info","event":"Batch 75: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:54.939710","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:54.978356","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:55.009522","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:55.187439","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:55.302860","level":"info","event":"Batch 76: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:55.648467","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:55.684375","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:55.716792","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:55.910179","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:56.026637","level":"info","event":"Batch 77: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:56.390953","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:56.449115","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:56.479858","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:56.642241","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:56.734250","level":"info","event":"Batch 78: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.027904","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.061931","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.091352","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.241657","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.340688","level":"info","event":"Batch 79: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.652869","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.688517","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.716887","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.876604","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:57.966544","level":"info","event":"Batch 80: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:58.291983","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:58.318179","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:58.343686","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:58.487913","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:58.586137","level":"info","event":"Batch 81: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:58.898218","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:58.923565","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:58.947471","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:59.091955","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:59.191537","level":"info","event":"Batch 82: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:59.538689","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:59.565174","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:59.590239","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:59.729046","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:43:59.811761","level":"info","event":"Batch 83: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:00.137355","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:00.171622","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:00.203710","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:00.370805","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:00.471592","level":"info","event":"Batch 84: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:00.816699","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:00.851711","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:00.881944","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:01.059523","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:01.165184","level":"info","event":"Batch 85: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:01.517941","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:01.552497","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:01.583416","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:01.790113","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:01.925874","level":"info","event":"Batch 86: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:02.271141","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:02.308282","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:02.331127","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:02.463051","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:02.560440","level":"info","event":"Batch 87: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:02.886278","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:02.930131","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:02.960832","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.125749","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.216781","level":"info","event":"Batch 88: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.544126","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.578610","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.612189","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.809761","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.907078","level":"info","event":"Batch 89: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.225268","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.252831","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.280856","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.431454","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.532948","level":"info","event":"Batch 90: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.545527","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.578670","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.606515","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.486991","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.581027","level":"info","event":"Batch 91: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.933484","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:03.973876","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.007709","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.202237","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.335992","level":"info","event":"Batch 92: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.790420","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.821857","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:04.849614","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:05.004032","level":"info","event":"Tổng số bản ghi cần gửi: 100","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:05.084746","level":"info","event":"Batch 93: 100 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:05.408777","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:05.432395","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:05.457479","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:05.602931","level":"info","event":"Tổng số bản ghi cần gửi: 42","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:05.710900","level":"info","event":"Batch 94: 42 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:06.059725","level":"info","event":"extract_dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:06.099761","level":"info","event":"transform dim_order","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:06.127865","level":"info","event":"Extract và transform dim_order thành công","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:06.184714","level":"info","event":"Đã hết dữ liệu để push lên Kafka.","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:06.185024","level":"info","event":"Đã đẩy 9342 bản ghi lên Kafka.","logger":"dags.etl_dim_order"}
+{"timestamp":"2025-06-21T14:44:06.513364","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-21T14:44:06.541514Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:44:06.542190Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:44:06.542770Z","level":"info","event":"Task operator:<Task(PythonOperator): dim_order_group.producer_kafka>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:44:07.029769Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 0) / 1]\r\r[Stage 0:>                                                          (0 + 1) / 1]","chan":"stderr","logger":"task"}

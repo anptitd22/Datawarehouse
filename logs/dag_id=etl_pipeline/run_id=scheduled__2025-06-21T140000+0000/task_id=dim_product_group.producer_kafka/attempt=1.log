@@ -1,0 +1,82 @@
+{"timestamp":"2025-06-21T14:30:12.200741","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-21T14:30:12.201825","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/etl_pipeline.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-21T14:30:13.030659Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:30:13.031777Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:30:13.032476Z","level":"info","event":"Current task name:dim_product_group.producer_kafka","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:30:13.033215Z","level":"info","event":"Dag name:etl_pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:30:13.769491Z","level":"error","event":"WARNING: Using incubator modules: jdk.incubator.vector","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.025209Z","level":"error","event":":: loading settings :: url = jar:file:/home/airflow/.local/lib/python3.12/site-packages/pyspark/jars/ivy-2.5.3.jar!/org/apache/ivy/core/settings/ivysettings.xml","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.178637Z","level":"error","event":"Ivy Default Cache set to: /home/airflow/.ivy2.5.2/cache","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.180187Z","level":"error","event":"The jars for the packages stored in: /home/airflow/.ivy2.5.2/jars","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.190020Z","level":"error","event":"org.postgresql#postgresql added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.191490Z","level":"error","event":"org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.194434Z","level":"error","event":":: resolving dependencies :: org.apache.spark#spark-submit-parent-bd686ccf-0cd2-4357-a1dc-f869fbb7f161;1.0","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.197127Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.450249Z","level":"error","event":"\tfound org.postgresql#postgresql;42.7.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.506233Z","level":"error","event":"\tfound org.checkerframework#checker-qual;3.41.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.489121Z","level":"error","event":"\tfound org.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.645273Z","level":"error","event":"\tfound org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.749807Z","level":"error","event":"\tfound org.apache.kafka#kafka-clients;2.8.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:16.548555Z","level":"error","event":"\tfound org.lz4#lz4-java;1.8.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:16.648676Z","level":"error","event":"\tfound org.xerial.snappy#snappy-java;1.1.8.4 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:16.719315Z","level":"error","event":"\tfound org.slf4j#slf4j-api;1.7.32 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:16.951577Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-runtime;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.057523Z","level":"error","event":"\tfound org.spark-project.spark#unused;1.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.226493Z","level":"error","event":"\tfound org.apache.hadoop#hadoop-client-api;3.3.2 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.393331Z","level":"error","event":"\tfound commons-logging#commons-logging;1.1.3 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.474975Z","level":"error","event":"\tfound com.google.code.findbugs#jsr305;3.0.0 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.613019Z","level":"error","event":"\tfound org.apache.commons#commons-pool2;2.11.1 in central","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.867607Z","level":"error","event":":: resolution report :: resolve 522ms :: artifacts dl 151ms","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.876798Z","level":"error","event":"\t:: modules in use:","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.890105Z","level":"error","event":"\tcom.google.code.findbugs#jsr305;3.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.903859Z","level":"error","event":"\tcommons-logging#commons-logging;1.1.3 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.912198Z","level":"error","event":"\torg.apache.commons#commons-pool2;2.11.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.921882Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-api;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.923060Z","level":"error","event":"\torg.apache.hadoop#hadoop-client-runtime;3.3.2 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.945190Z","level":"error","event":"\torg.apache.kafka#kafka-clients;2.8.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.954026Z","level":"error","event":"\torg.apache.spark#spark-sql-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.966638Z","level":"error","event":"\torg.apache.spark#spark-token-provider-kafka-0-10_2.12;3.3.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.970708Z","level":"error","event":"\torg.checkerframework#checker-qual;3.41.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.982822Z","level":"error","event":"\torg.lz4#lz4-java;1.8.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:17.998790Z","level":"error","event":"\torg.postgresql#postgresql;42.7.1 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.007047Z","level":"error","event":"\torg.slf4j#slf4j-api;1.7.32 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.014581Z","level":"error","event":"\torg.spark-project.spark#unused;1.0.0 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.015444Z","level":"error","event":"\torg.xerial.snappy#snappy-java;1.1.8.4 from central in [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.016100Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.016563Z","level":"error","event":"\t|                  |            modules            ||   artifacts   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.017274Z","level":"error","event":"\t|       conf       | number| search|dwnlded|evicted|| number|dwnlded|","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.017713Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.018563Z","level":"error","event":"\t|      default     |   14  |   0   |   0   |   0   ||   14  |   0   |","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.021453Z","level":"error","event":"\t---------------------------------------------------------------------","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.028413Z","level":"error","event":":: retrieving :: org.apache.spark#spark-submit-parent-bd686ccf-0cd2-4357-a1dc-f869fbb7f161","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.034173Z","level":"error","event":"\tconfs: [default]","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:18.035396Z","level":"error","event":"\t0 artifacts copied, 14 already retrieved (0kB/59ms)","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:19.077622Z","level":"error","event":"25/06/21 14:30:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:19.821972Z","level":"error","event":"Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:19.827980Z","level":"error","event":"Setting default log level to \"WARN\".","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:19.829027Z","level":"error","event":"To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:23.832575Z","level":"error","event":"25/06/21 14:30:23 WARN Utils: Service 'SparkUI' could not bind on port 4050. Attempting port 4051.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-06-21T14:30:39.414958","level":"info","event":"Thử lần 1/5 kiểm tra topic 'dim_product'...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T14:30:39.717054","level":"info","event":"Đang tạo topic 'dim_product' với 5 partitions...","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T14:30:41.279643","level":"info","event":"Đã tạo topic: dim_product","logger":"kafka.build_kafka"}
+{"timestamp":"2025-06-21T14:30:41.685965","level":"info","event":"extract dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T14:30:48.135979","level":"info","event":"transform dim_product","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T14:30:50.823429","level":"info","event":"Extract và transform dim_product thành công","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T14:31:01.983324","level":"info","event":"Tổng số bản ghi cần gửi: 50","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T14:31:03.391221","level":"info","event":"Batch 1: 50 bản ghi. Đang gửi lên Kafka...","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T14:31:29.723238","level":"info","event":"Error while receiving.","logger":"py4j.clientserver","error_detail":[{"exc_type":"Py4JNetworkError","exc_value":"Answer from Java side is empty","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.12/site-packages/py4j/clientserver.py","lineno":540,"name":"send_command"}]}]}
+{"timestamp":"2025-06-21T14:31:29.741844","level":"info","event":"Closing down clientserver connection","logger":"py4j.clientserver"}
+{"timestamp":"2025-06-21T14:31:29.742950","level":"info","event":"Exception while sending command.","logger":"root","error_detail":[{"exc_type":"Py4JNetworkError","exc_value":"Answer from Java side is empty","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.12/site-packages/py4j/java_gateway.py","lineno":1038,"name":"send_command"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/py4j/clientserver.py","lineno":540,"name":"send_command"}]}]}
+{"timestamp":"2025-06-21T14:31:29.743469","level":"info","event":"Closing down clientserver connection","logger":"py4j.clientserver"}
+{"timestamp":"2025-06-21T14:31:29.744777","level":"info","event":"Closing down clientserver connection","logger":"py4j.clientserver"}
+{"timestamp":"2025-06-21T14:31:29.745297","level":"error","event":"Lỗi trong quá trình gửi Kafka: [Errno 111] Connection refused","logger":"dags.etl_dim_product"}
+{"timestamp":"2025-06-21T14:31:29.745488","level":"info","event":"Closing down clientserver connection","logger":"py4j.clientserver"}
+{"timestamp":"2025-06-21T14:31:29.745656","level":"info","event":"Closing down clientserver connection","logger":"py4j.clientserver"}
+{"timestamp":"2025-06-21T14:31:29.745827","level":"info","event":"Closing down clientserver connection","logger":"py4j.clientserver"}
+{"timestamp":"2025-06-21T14:31:29.766204","level":"info","event":"Closing down clientserver connection","logger":"py4j.clientserver"}
+{"timestamp":"2025-06-21T14:31:29.767091","level":"error","event":"Task failed with exception","logger":"task","error_detail":[{"exc_type":"ConnectionRefusedError","exc_value":"[Errno 111] Connection refused","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":825,"name":"run"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1088,"name":"_execute_task"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/bases/operator.py","lineno":408,"name":"wrapper"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":212,"name":"execute"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":235,"name":"execute_callable"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/callback_runner.py","lineno":81,"name":"run"},{"filename":"/opt/airflow/dags/etl_dim_product.py","lineno":122,"name":"producer_product_kafka"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pyspark/sql/session.py","lineno":2023,"name":"stop"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/pyspark/core/context.py","lineno":684,"name":"stop"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/py4j/java_gateway.py","lineno":1361,"name":"__call__"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/py4j/java_gateway.py","lineno":1036,"name":"send_command"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/py4j/clientserver.py","lineno":284,"name":"_get_connection"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/py4j/clientserver.py","lineno":291,"name":"_create_new_connection"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/py4j/clientserver.py","lineno":438,"name":"connect_to_java_server"}]}]}
+{"timestamp":"2025-06-21T14:31:29.884577Z","level":"info","event":"Task instance in failure state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:31:29.887284Z","level":"info","event":"Task start","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:31:29.888176Z","level":"info","event":"Task:<Task(PythonOperator): dim_product_group.producer_kafka>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:31:29.888830Z","level":"info","event":"Failure caused by [Errno 111] Connection refused","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-21T14:31:29.889913Z","level":"error","event":"\r[Stage 0:>                                                          (0 + 0) / 1]\r\r[Stage 0:>                                                          (0 + 1) / 1]\r\r[Stage 0:===========================================================(1 + 0) / 1]\r\r                                                                                \r\r[Stage 1:>                                                          (0 + 1) / 1]","chan":"stderr","logger":"task"}
