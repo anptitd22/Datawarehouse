@@ -42,4 +42,6 @@ cài đặt connections database đầu vào và đầu ra
 
 #Trong project này thì dùng postgres bằng docker trong backend web và datamart có script build sẵn
 
+#data postgre: https://github.com/anptitd22/Datawarehouse/blob/main/dataset/downdata.txt
+
 #Tran Duc AN
