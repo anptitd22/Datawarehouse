@@ -24,6 +24,14 @@ các dữ liệu được đảm bảo trật tự, toàn vẹn bởi schema reg
 
 ![alt](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750618416/ok_apdjoj.png)
 
+Luồng ETL hóa trên Airflow:
+
+![alt]([https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750652904/ok664646_wkn87i.png](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750652904/ok123_lld8la.png))
+
+Kết quả:
+
+![alt](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750652904/ok123_lld8la.png)
+
 Phân tích dự đoán tăng trưởng Machine Learning
 
 # Hướng dẫn cài đặt
