@@ -44,6 +44,8 @@ Cài đặt docker
 
 docker compose build 
 
+#Lưu ý: các thư viện sqlserver trong dockerfile chỉ cài 1 lần lần sau build lại không cần cài nữa trừ khi xóa hết dữ liệu
+
 docker compose up -d
 
 docker compose up
@@ -52,11 +54,13 @@ docker compose up
 
 tk: airflow mk: airflow
 
-cài đặt connections database đầu vào và đầu ra
+cài đặt connections trong airflow: postgre và sqlserver
 
 #Lưu ý là nếu dùng docker chứa database thì nên cho vào cùng network airflow
 
-#Trong project này thì dùng postgres bằng docker trong backend web và datamart có script build sẵn
+#Trong project này thì dùng postgres bằng docker trong backend web và datamart tự build
+
+#Dữ liệu được cào từ web https://www.nguyenkim.com
 
 #data postgre: https://github.com/anptitd22/Datawarehouse/blob/main/note/downdata.txt
 
