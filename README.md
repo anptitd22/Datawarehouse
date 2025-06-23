@@ -1,11 +1,11 @@
-# Datawarehouse Điện máy xanh
+![image](https://github.com/user-attachments/assets/11dd22b1-bf53-4b3f-b58a-c6e0fa177221)# Datawarehouse Điện máy xanh
 Sử dụng ngôn ngữ Python
 
 Sử dụng database Postgre -> SQLserver
 
 Data Web:
 
-![alt](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750694480/ERD123_se99fd.png)
+![alt](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750700441/Screenshot_2025-06-24_003957_xi6xcl.png)
 
 Data Warehouse:
 
