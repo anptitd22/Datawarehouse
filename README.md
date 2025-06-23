@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/11dd22b1-bf53-4b3f-b58a-c6e0fa177221)# Datawarehouse Điện máy xanh
+# Datawarehouse Điện máy xanh
 Sử dụng ngôn ngữ Python
 
 Sử dụng database Postgre -> SQLserver
