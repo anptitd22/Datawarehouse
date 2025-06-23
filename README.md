@@ -1,11 +1,17 @@
-# Datawarehouse Điện máy xanh
+![image](https://github.com/user-attachments/assets/670a3daa-d6c8-410d-9339-ee58b56a89f8)# Datawarehouse Điện máy xanh
 Sử dụng ngôn ngữ Python
 
 Sử dụng database Postgre -> SQLserver
 
+Data Warehouse:
+
+![alt](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750651954/Screenshot_2025-06-23_111057_nt8s8m.png)
+
+Star Schema (mô hình hình sao) là một mô hình dữ liệu đơn giản và hiệu quả cho kho dữ liệu (data warehouse), bao gồm một bảng thực tế trung tâm (fact table) và nhiều bảng chiều (dimension tables) xung quanh
+
 Chạy trên Docker
 
-Tạo datawarehouse bằng quy trình ETL 
+Quy trình ETL 
 
 Kết hợp công nghệ Spark + Kafka + Protobuf + Schema Registry + Airflow
 
