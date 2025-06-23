@@ -26,7 +26,7 @@ các dữ liệu được đảm bảo trật tự, toàn vẹn bởi schema reg
 
 Luồng ETL hóa trên Airflow:
 
-![alt]([https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750652904/ok664646_wkn87i.png](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750652904/ok123_lld8la.png))
+![alt](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750652904/ok123_lld8la.png)
 
 Kết quả:
 
