@@ -66,6 +66,8 @@ cài đặt connections trong airflow: postgre và sqlserver
 
 #Dữ liệu được cào từ web https://www.nguyenkim.com
 
+#Source_code cào dữ liệu: https://drive.google.com/file/d/18uaifKuMr0RU8YYY3l1UpW11jmTShMLi/view?usp=drive_link
+
 #data postgre: https://github.com/anptitd22/Datawarehouse/blob/main/note/downdata.txt
 
 #script datawarehouse: https://github.com/anptitd22/Datawarehouse/blob/main/note/create_datawarehouse.sql
