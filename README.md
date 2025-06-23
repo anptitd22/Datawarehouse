@@ -3,6 +3,10 @@ Sử dụng ngôn ngữ Python
 
 Sử dụng database Postgre -> SQLserver
 
+Data Web:
+
+![alt](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750694480/ERD123_se99fd.png)
+
 Data Warehouse:
 
 ![alt](https://res.cloudinary.com/dyzdqrbw8/image/upload/v1750651954/Screenshot_2025-06-23_111057_nt8s8m.png)
