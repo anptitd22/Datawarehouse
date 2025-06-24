@@ -1,4 +1,4 @@
-# Datawarehouse Điện máy xanh
+# Datawarehouse Web gia dụng nguyenkim
 Sử dụng ngôn ngữ Python
 
 Sử dụng database Postgre -> SQLserver
