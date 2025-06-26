@@ -212,15 +212,14 @@ def consumer_fact_status_kafka():
             else:
                 skipped_count += 1
 
-            sql_conn.commit()
-
         logger.info(f"Đã thêm fact_status {inserted_count} bản ghi mới, bỏ qua {skipped_count} bản ghi trùng")
 
     except Exception as e:
         sql_conn.rollback()
-        logger.error(f"Lỗi khi tải dữ liệu: {str(e)}")
+        logger.error(f"Lỗi trong quá trình consume hoặc insert: {e}")
         raise
     finally:
+        sql_conn.commit()
         cursor.close()
         sql_conn.close()
         consumer.close()

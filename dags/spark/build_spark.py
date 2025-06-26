@@ -1,9 +1,21 @@
+import os
+from dotenv import load_dotenv
 from pyspark.sql import SparkSession
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-SQL_URL = "jdbc:postgresql://postgres_container:5432/postgres"
-SQL_USER = "admin"
-SQL_PASS = "123456"
+path_env = "../../.env"
+
+load_dotenv(path_env)
+
+SQL_URL = os.getenv("SQL_URL")
+SQL_USER = os.getenv("SQL_USER")
+SQL_PASS = os.getenv("SQL_PASS")
+SQL_DRIVER = os.getenv("SQL_DRIVER")
+
+SQL_URL_TARGET = os.getenv("SQL_URL_TARGET")
+SQL_USER_TARGET = os.getenv("SQL_USER_TARGET")
+SQL_PASS_TARGET = os.getenv("SQL_PASS_TARGET")
+SQL_DRIVER_TARGET = os.getenv("SQL_DRIVER_TARGET")
 
 def get_spark():  #\spark://spark-master:7077
     return SparkSession.builder \
@@ -11,8 +23,9 @@ def get_spark():  #\spark://spark-master:7077
         .master("local[*]") \
         .config("spark.ui.port", "4050") \
         .config("spark.jars.packages",
-               "org.postgresql:postgresql:42.7.1,"
-               "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0") \
+                "org.postgresql:postgresql:42.7.1,"
+                "org.apache.spark:spark-sql-kafka-0-10_2.12:3.3.0,"
+                "com.microsoft.sqlserver:mssql-jdbc:11.2.3.jre11") \
         .config("spark.driver.memory", "512m") \
         .config("spark.executor.memory", "512m") \
         .config("spark.memory.fraction", "0.6") \
@@ -24,6 +37,7 @@ def get_spark():  #\spark://spark-master:7077
         .config("spark.executor.heartbeatInterval", "30s") \
         .getOrCreate()
 
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
 def read_spark(spark, query):
     return spark.read \
         .format("jdbc") \
@@ -31,18 +45,18 @@ def read_spark(spark, query):
         .option("query", query) \
         .option("user", SQL_USER) \
         .option("password", SQL_PASS) \
-        .option("driver", "org.postgresql.Driver") \
+        .option("driver", SQL_DRIVER) \
         .load()
 
-@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
-def load_spark(df, sql_table, spark):
+def load_spark(df, sql_table):
     df.write \
         .format("jdbc") \
-        .option("url", SQL_URL) \
-        .option("dbtable", sql_table) \
-        .option("user", SQL_USER) \
-        .option("password", SQL_PASS) \
-        .mode("append") \
+        .option("url", SQL_URL_TARGET) \
+        .option("dbtable", f"{sql_table}_staging") \
+        .option("user", SQL_USER_TARGET) \
+        .option("password", SQL_PASS_TARGET) \
+        .option("driver", SQL_DRIVER_TARGET) \
+        .mode("overwrite") \
         .save()
 
 def install_spark_dependencies():

@@ -106,6 +106,7 @@ def producer_customer_kafka():
 
     except Exception as e:
         logger.error(f"Lỗi khi gửi Kafka batch {batch_number}: {e}")
+        raise
     finally:
         producer.flush()
         spark.stop()
@@ -113,7 +114,7 @@ def producer_customer_kafka():
 def consumer_customer_kafka():
     consumer = get_consumer(CustomerMessage, GROUP_ID)
 
-    consumer.subscribe(['dim_customer'])
+    consumer.subscribe([TOPIC_NAME])
     sql_conn = get_sqlserver_conn()
     cursor = sql_conn.cursor()
 
@@ -121,8 +122,8 @@ def consumer_customer_kafka():
     skipped_count = 0
     empty_poll_count = 0
 
-    while empty_poll_count < 5:
-        try:
+    try:
+        while empty_poll_count < 5:
             msg = consumer.poll(1.0)
             if msg is None:
                 time.sleep(0.1)
@@ -145,11 +146,14 @@ def consumer_customer_kafka():
             else:
                 skipped_count +=1
 
-        except Exception as e:
-            logger.error(f"Lỗi trong quá trình consume hoặc insert: {e}")
+        logger.info(f"Đã thêm dim_customer {inserted_count} bản ghi mới, bỏ qua {skipped_count} bản ghi trùng")
 
-    sql_conn.commit()
-    print(f"Đã thêm dim_customer {inserted_count} bản ghi mới, bỏ qua {skipped_count} bản ghi trùng")
-    cursor.close()
-    sql_conn.close()
-    consumer.close()
+    except Exception as e:
+        sql_conn.rollback()
+        logger.error(f"Lỗi trong quá trình consume hoặc insert: {e}")
+        raise
+    finally:
+        sql_conn.commit()
+        cursor.close()
+        sql_conn.close()
+        consumer.close()

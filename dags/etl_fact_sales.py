@@ -149,6 +149,7 @@ def producer_sales_kafka ():
         logger.info(f"Đã đẩy {total_records} bản ghi lên Kafka.")
     except Exception as e:
         logger.error(f"Lỗi trong quá trình gửi Kafka: {e}")
+        raise
     finally:
         producer.flush()
         spark.stop()
@@ -200,14 +201,14 @@ def consumer_fact_sales_kafka():
             else:
                 skipped_count += 1
 
-        sql_conn.commit()
-        print(f"Đã thêm fact_sales {inserted_count} bản ghi mới, bỏ qua {skipped_count} bản ghi trùng")
+        logger.info(f"Đã thêm fact_sales {inserted_count} bản ghi mới, bỏ qua {skipped_count} bản ghi trùng")
 
     except Exception as e:
         sql_conn.rollback()
-        logger.error(f"Lỗi khi tải dữ liệu: {str(e)}")
+        logger.error(f"Lỗi trong quá trình consume hoặc insert: {e}")
         raise
     finally:
+        sql_conn.commit()
         cursor.close()
         sql_conn.close()
         consumer.close()

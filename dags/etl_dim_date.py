@@ -90,7 +90,7 @@ def producer_date_kafka():
 
     except Exception as e:
         logger.error(f"Lỗi trong quá trình gửi Kafka: {e}")
-
+        raise
     finally:
         producer.flush()
         spark.stop()
@@ -107,8 +107,8 @@ def consumer_date_kafka():
     skipped_count = 0
     empty_poll_count = 0
 
-    while empty_poll_count < 5:
-        try:
+    try:
+        while empty_poll_count < 5:
             msg = consumer.poll(1.0)
             if msg is None:
                 time.sleep(0.1)
@@ -128,12 +128,14 @@ def consumer_date_kafka():
             else:
                 skipped_count += 1
 
-        except Exception as e:
-            logger.error(f"Lỗi trong quá trình consume hoặc insert: {e}")
+        logger.info(f"Đã thêm dim_date {inserted_count} bản ghi mới, bỏ qua {skipped_count} bản ghi trùng")
 
-    sql_conn.commit()
-    logger.info(f"Đã thêm {inserted_count} bản ghi mới vào dim_date, bỏ qua {skipped_count} bản ghi trùng")
-
-    cursor.close()
-    sql_conn.close()
-    consumer.close()
+    except Exception as e:
+        sql_conn.rollback()
+        logger.error(f"Lỗi trong quá trình consume hoặc insert: {e}")
+        raise
+    finally:
+        sql_conn.commit()
+        cursor.close()
+        sql_conn.close()
+        consumer.close()
