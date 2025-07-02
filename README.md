@@ -76,7 +76,7 @@ cài đặt connections trong airflow: postgre và sqlserver
 
 # Hướng phát triển thêm (Trong tương lai sẽ làm)
 
-Thiết kế câu lệnh SQL dễ đọc hơn 
+Thiết kế câu lệnh SQL tối ưu và dễ đọc hơn 
 
 Xử lí null/sai dữ liệu và chuyển các boolean sang câu string cụ thể
 
@@ -94,4 +94,6 @@ Thống nhất thứ tự cột trong các bảng
 
 Tối ưu cài đặt kafka và spark
 
-load dữ liệu bằng spark cả batch thay vì pandas từng dữ liệu một 
+Cài đặt log4j đầy đủ cho spark
+
+Load dữ liệu bằng spark cả batch thay vì SQL từng dữ liệu một 
