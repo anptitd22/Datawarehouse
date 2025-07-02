@@ -73,3 +73,25 @@ cài đặt connections trong airflow: postgre và sqlserver
 #script datawarehouse: https://github.com/anptitd22/Datawarehouse/blob/main/note/create_datawarehouse.sql
 
 #Tran Duc AN
+
+# Hướng phát triển thêm (Trong tương lai sẽ làm)
+
+Thiết kế câu lệnh SQL dễ đọc hơn 
+
+Xử lí null/sai dữ liệu và chuyển các boolean sang câu string cụ thể
+
+Thống nhất thứ tự cột trong các bảng
+
+| Các loại cột     | Thứ tự cột trong bảng dim | Thứ tự cột trong bảng Fact |
+|------------------|---------------------------|----------------------------|
+| Primary key      | Primary key               | Primary key                |
+| Attribute        | Name/Description          | Description                |
+| Foreign key      | Attribute                 | Foreign key                |
+| Name/Description | Fact                      | Date/Datetime              |
+| Fact             | Date/Datetime             | Fact                       |
+| Date/Datetime    | Foreign key               |                            |
+| PII (infor)      |                           |                            |
+
+Tối ưu cài đặt kafka và spark
+
+load dữ liệu bằng spark cả batch thay vì pandas từng dữ liệu một 
